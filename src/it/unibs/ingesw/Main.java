@@ -6,8 +6,7 @@ public class Main {
 
 	public static void main(String[] args) {
 
-		ArrayList<Network> networks = new ArrayList<>();
-		Menu menu = new Menu(networks.size());
+		Menu menu = new Menu();
 		menu.startMenu();
 	}
 

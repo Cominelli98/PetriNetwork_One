@@ -2,6 +2,7 @@ package it.unibs.ingesw;
 
 import java.util.ArrayList;
 
+
 public class Network {
 	
 	private ArrayList<Location> locations;
@@ -9,19 +10,20 @@ public class Network {
 	private ArrayList<Link> netLinks;
 	private int netId; 
 	private String name;
+	static int network_id = 0;
 	
-	public Network (int ID, String name) {
+	public Network (String name) {
 		locations = new ArrayList<Location>();
 		transitions = new ArrayList<Transition>();
 		netLinks = new ArrayList<Link>();
 		this.name = name;
-		this.netId = ID;
+		this.netId = network_id++;
 	}
 	
 	
 	
 	public void addLocation (String name) {
-		locations.add(new Location(netId, locations.size(), name));
+		locations.add(new Location(netId, locations.size() /*da cambiare se voglio aggiungere la rimozione*/, name));
 	}
 
 
@@ -32,7 +34,7 @@ public class Network {
 	public void addLink (Link l) {
 		netLinks.add(l);
 	}
-
+	/*
 	public void removeLocation (Location l) {
 		locations.remove(l);
 	}
@@ -44,11 +46,15 @@ public class Network {
 	public void removeLink (Link l) {
 		netLinks.remove(l);
 	}
-	
+	*/
 	
 	
 	public ArrayList<Location> getLocations() {
 		return locations;
+	}
+	
+	public Location getLocation(int i) {
+		return this.locations.get(i);
 	}
 
 	public void setLocations(ArrayList<Location> locations) {
@@ -57,6 +63,10 @@ public class Network {
 
 	public ArrayList<Transition> getTransitions() {
 		return transitions;
+	}
+	
+	public Transition getTransition(int i) {
+		return this.transitions.get(i);
 	}
 
 	public void setTransitions(ArrayList<Transition> transitions) {
@@ -80,4 +90,27 @@ public class Network {
 	}
 	
 	
+	public StringBuffer getTransitionsList() {
+		StringBuffer s = new StringBuffer("");
+		for (int i = 0; i<transitions.size(); i++) {
+			s.append(i + ")" + transitions.get(i).getNodeName() + "\n");
+		}
+		return s;
+	}
+	
+	public StringBuffer getLocationsList() {
+		StringBuffer s = new StringBuffer("");
+		for (int i = 0; i<locations.size(); i++) {
+			s.append(i + ")" + locations.get(i).getNodeName() + "\n");
+		}
+		return s;
+	}
+	
+	public Transition getLastTransition() {
+		return transitions.get(transitions.size()-1);
+	}
+	
+	public Location getLastLocation() {
+		return locations.get(locations.size()-1);
+	}
 }

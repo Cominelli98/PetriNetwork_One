@@ -1,26 +1,52 @@
 package it.unibs.ingesw;
 
+import java.util.ArrayList;
 import java.util.Scanner;
+
 
 public class Menu {
 	
-	private int idNet;
-	private Network network;
+	String SELEZIONE = "Seleziona: ";
 	
-	public Menu(int idNet) {
-		this.idNet = idNet;
+	String MENUSTART[] = {
+			"MENU:",
+			"___________________________",
+			"1:crea Network",
+			"0:esci",
+			"___________________________",
+			
+	};
+	
+	String MENUNETWORK[] = {
+			"Scegli cosa fare:",
+			"___________________________",
+			"1:crea transition",
+			"2:crea location",
+			"3:crea link",
+			"0:esci",
+			"___________________________"};
+	
+	String ASKLINK = "A cosa vuoi collegarla? Inserisci il numero relativo";
+	
+	private int idNet;
+	private Network currentNetwork;
+	private ArrayList<Network> networks;
+	Scanner scanner;
+	
+	public Menu() {
+		
+		networks = new ArrayList<>();
+		Network.network_id = networks.size(); //TODO get biggest id	
+		 scanner = new Scanner(System.in);
 	}
 	
 	public void startMenu() {
-		int select;
+		var select = -1;
 		do {
-			System.out.println("MENU:");
-			System.out.println("___________________________");
-			System.out.println("1:crea Network");
-			System.out.println("0:esci");
-			System.out.println("___________________________");
-			System.out.print("Seleziona: ");
-			Scanner scanner = new Scanner(System.in);
+			for (String s : MENUSTART) {
+				System.out.println(s);
+			}
+			
 			select = scanner.nextInt();
 			
 			switch (select) {
@@ -28,6 +54,7 @@ public class Menu {
 					createNetwork();
 					break;
 				case 0:
+					scanner.close();
 					break;
 
 				default:
@@ -37,28 +64,44 @@ public class Menu {
 	}
 	
 	public Network createNetwork() {
-		System.out.println("Inserisci il nome della nuova netWork: ");
-		Scanner scanner = new Scanner(System.in);
-		String name = scanner.next();
-		Network network = new Network(idNet, name);
-		int select;
+		System.out.println("Inserisci il nome della nuova rete: ");
+		var name = scanner.next();
+		var network = new Network(name);
+		networks.add(network);
+		currentNetwork = network;
+		var select = -1;
+		
+		createBase();
+		
 		do {
-			System.out.println("Scegli cosa fare:");
-			System.out.println("1:crea transition");
-			System.out.println("2:crea location");
-			System.out.println("3:crea link");
-			System.out.println("0:esci");
-			select = scanner.nextInt();
-			
+			for (String s : MENUNETWORK) {
+				System.out.println(s);
+			}
+			select = scanner.nextInt(); //TODO: CONTROL
+			var num = -1;
 			switch (select) {
 				
 			case 0:
 				break;
 				case 1:
-					network = createTransition(network);
+					createTransition();
+					System.out.println(ASKLINK);
+					System.out.print(currentNetwork.getLocationsList());
+					do {
+					num = scanner.nextInt();
+					} while (num<0 || num>=currentNetwork.getLocations().size());
+					createLink(currentNetwork.getLastTransition(), currentNetwork.getLocation(num));
+					num = -1;
 					break;
 				case 2:
-					network = createLocation(network);
+					createLocation();
+					System.out.println(ASKLINK);
+					System.out.print(currentNetwork.getTransitionsList());
+					do {
+					num = scanner.nextInt();
+					} while (num<0 || num>=currentNetwork.getTransitions().size());
+					createLink(currentNetwork.getTransition(num), currentNetwork.getLastLocation());
+					num = -1;
 					break;
 				case 3:
 					//createlink();
@@ -70,21 +113,26 @@ public class Menu {
 		return network;
 		}
 	
-	private Network createLocation(Network network) {
+	private void createLocation() {
 		System.out.println("Inserisci il nome della nuova location: ");
-		Scanner scanner = new Scanner(System.in);
-		String name = scanner.next();
-		network.addLocation(name);
-		return network;
+		var name = scanner.next();
+		currentNetwork.addLocation(name);
 	}
 	
-	private Network createTransition(Network network) {
+	private void createTransition() {
 		System.out.println("Inserisci il nome della nuova transition: ");
-		Scanner scanner = new Scanner(System.in);
-		String name = scanner.next();
-		network.addTransition(name);
-		return network;
+		var name = scanner.next();
+		currentNetwork.addTransition(name);
 	}
 	
+	public void createLink(Transition t, Location l) {
+		currentNetwork.addLink(new Link(t, l, currentNetwork.getNetId()));
+	}
+	private void createBase() {
+		createLocation();
+		createTransition();
+		currentNetwork.addLink(new Link(currentNetwork.getTransition(0), currentNetwork.getLocation(0), currentNetwork.getNetId()));
+		
+	}
 
 }
