@@ -1,6 +1,6 @@
 package it.unibs.ingesw;
 
-import java.util.ArrayList;
+import com.google.gson.Gson;
 
 public class Main {
 
@@ -8,6 +8,6 @@ public class Main {
 
 		Menu menu = new Menu();
 		menu.startMenu();
-	}
+		}
 
 }

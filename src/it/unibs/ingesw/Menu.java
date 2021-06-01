@@ -1,12 +1,14 @@
 package it.unibs.ingesw;
 
 import java.util.ArrayList;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 
 public class Menu {
 	
 	String SELEZIONE = "Seleziona: ";
+	String ERRORE = "ERRORE INSERIMENTO: inserisci un numero sensato\n";
 	
 	String MENUSTART[] = {
 			"MENU:",
@@ -47,8 +49,7 @@ public class Menu {
 				System.out.println(s);
 			}
 			
-			select = scanner.nextInt();
-			
+			select = Utility.readLimitedInt(0, 1, scanner);
 			switch (select) {
 				case 1:
 					createNetwork();
@@ -58,15 +59,17 @@ public class Menu {
 					break;
 
 				default:
-					throw new IllegalArgumentException("Unexpected value: " + select);
+					break;
+					//throw new IllegalArgumentException("Unexpected value: " + select);
 			}
 		}while(select != 0);
+		
 	}
 	
 	public Network createNetwork() {
 		System.out.println("Inserisci il nome della nuova rete: ");
-		var name = scanner.next();
-		var network = new Network(name);
+		String name = Utility.readString(scanner);
+		Network network = new Network(name);
 		networks.add(network);
 		currentNetwork = network;
 		var select = -1;
@@ -87,9 +90,7 @@ public class Menu {
 					createTransition();
 					System.out.println(ASKLINK);
 					System.out.print(currentNetwork.getLocationsList());
-					do {
-					num = scanner.nextInt();
-					} while (num<0 || num>=currentNetwork.getLocations().size());
+					num = Utility.readLimitedInt(0, currentNetwork.getLocations().size()-1, scanner);
 					createLink(currentNetwork.getLastTransition(), currentNetwork.getLocation(num));
 					num = -1;
 					break;
@@ -97,9 +98,7 @@ public class Menu {
 					createLocation();
 					System.out.println(ASKLINK);
 					System.out.print(currentNetwork.getTransitionsList());
-					do {
-					num = scanner.nextInt();
-					} while (num<0 || num>=currentNetwork.getTransitions().size());
+					num = Utility.readLimitedInt(0, currentNetwork.getTransitions().size()-1, scanner);
 					createLink(currentNetwork.getTransition(num), currentNetwork.getLastLocation());
 					num = -1;
 					break;
@@ -107,7 +106,8 @@ public class Menu {
 					//createlink();
 					break;
 				default:
-					throw new IllegalArgumentException("Unexpected value: " + select);
+					//throw new IllegalArgumentException("Unexpected value: " + select);
+					break;
 			}
 		}while(select != 0);
 		return network;
@@ -115,13 +115,13 @@ public class Menu {
 	
 	private void createLocation() {
 		System.out.println("Inserisci il nome della nuova location: ");
-		var name = scanner.next();
+		String name = Utility.readString(scanner);
 		currentNetwork.addLocation(name);
 	}
 	
 	private void createTransition() {
 		System.out.println("Inserisci il nome della nuova transition: ");
-		var name = scanner.next();
+		String name = Utility.readString(scanner);
 		currentNetwork.addTransition(name);
 	}
 	
