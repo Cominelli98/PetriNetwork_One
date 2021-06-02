@@ -2,8 +2,8 @@ package it.unibs.ingesw;
 
 public class Link {
 	
-	private Transition transition;
-	private Location location;
+	private Transition transition;	//node origin
+	private Location location;		//node dest
 	private int netId;
 	
 	public Link (Transition transition, Location location, int netId) {
@@ -13,10 +13,6 @@ public class Link {
 	}
 	
 	
-	
-	
-	
-
 	public Transition getTransition() {
 		return transition;
 	}
