@@ -38,7 +38,6 @@ public class Menu {
 		
 		networks = new ArrayList<>();
 		Network.network_id = networks.size(); //TODO get biggest id	
-		 scanner = new Scanner(System.in);
 	}
 	
 	public void startMenu() {
@@ -48,7 +47,7 @@ public class Menu {
 				System.out.println(s);
 			}
 			
-			select = Utility.readLimitedInt(0, 1, scanner);
+			select = Utility.readLimitedInt(0, 1);
 			switch (select) {
 				case 1:
 					createNetwork();
@@ -70,7 +69,7 @@ public class Menu {
 		boolean isEqual = false;
 		if(networks.size()>0) {
 		do {
-			name = Utility.readString(scanner);
+			name = Utility.readString();
 			for (int i = 0; i < networks.size(); i++) {
 				if(networks.get(i).getName() == name) {
 					isEqual = true;
@@ -78,7 +77,7 @@ public class Menu {
 			}
 		}while(isEqual);
 		}else {
-			name = Utility.readString(scanner);
+			name = Utility.readString();
 		}
 		Network network = new Network(name);
 		networks.add(network);
@@ -91,7 +90,7 @@ public class Menu {
 			for (String s : MENUNETWORK) {
 				System.out.println(s);
 			}
-			select = Utility.readLimitedInt(0, 3, scanner); //TODO: CONTROL
+			select = Utility.readLimitedInt(0, 3); //TODO: CONTROL
 			var num = -1;
 			switch (select) {
 				
@@ -101,7 +100,7 @@ public class Menu {
 					createTransition();
 					System.out.println(ASKLINK);
 					System.out.print(currentNetwork.getLocationsList());
-					num = Utility.readLimitedInt(0, currentNetwork.getLocations().size()-1, scanner);
+					num = Utility.readLimitedInt(0, currentNetwork.getLocations().size()-1);
 					createLink(currentNetwork.getLastTransition(), currentNetwork.getLocation(num));
 					num = -1;
 					break;
@@ -109,7 +108,7 @@ public class Menu {
 					createLocation();
 					System.out.println(ASKLINK);
 					System.out.print(currentNetwork.getTransitionsList());
-					num = Utility.readLimitedInt(0, currentNetwork.getTransitions().size()-1, scanner);
+					num = Utility.readLimitedInt(0, currentNetwork.getTransitions().size()-1);
 					createLink(currentNetwork.getTransition(num), currentNetwork.getLastLocation());
 					num = -1;
 					break;
@@ -125,13 +124,13 @@ public class Menu {
 	
 	private void createLocation() {
 		System.out.println("Inserisci il nome della nuova location: ");
-		String name = Utility.readString(scanner);
+		String name = Utility.readString();
 		currentNetwork.addLocation(name);
 	}
 	
 	private void createTransition() {
 		System.out.println("Inserisci il nome della nuova transition: ");
-		String name = Utility.readString(scanner);
+		String name = Utility.readString();
 		currentNetwork.addTransition(name);
 	}
 	
