@@ -1,7 +1,6 @@
 package it.unibs.ingesw;
 
 import java.util.ArrayList;
-import java.util.InputMismatchException;
 import java.util.Scanner;
 
 
@@ -60,7 +59,6 @@ public class Menu {
 
 				default:
 					break;
-					//throw new IllegalArgumentException("Unexpected value: " + select);
 			}
 		}while(select != 0);
 		
@@ -68,7 +66,20 @@ public class Menu {
 	
 	public Network createNetwork() {
 		System.out.println("Inserisci il nome della nuova rete: ");
-		String name = Utility.readString(scanner);
+		String name;
+		boolean isEqual = false;
+		if(networks.size()>0) {
+		do {
+			name = Utility.readString(scanner);
+			for (int i = 0; i < networks.size(); i++) {
+				if(networks.get(i).getName() == name) {
+					isEqual = true;
+				}
+			}
+		}while(isEqual);
+		}else {
+			name = Utility.readString(scanner);
+		}
 		Network network = new Network(name);
 		networks.add(network);
 		currentNetwork = network;
@@ -80,7 +91,7 @@ public class Menu {
 			for (String s : MENUNETWORK) {
 				System.out.println(s);
 			}
-			select = scanner.nextInt(); //TODO: CONTROL
+			select = Utility.readLimitedInt(0, 3, scanner); //TODO: CONTROL
 			var num = -1;
 			switch (select) {
 				
@@ -106,7 +117,6 @@ public class Menu {
 					//createlink();
 					break;
 				default:
-					//throw new IllegalArgumentException("Unexpected value: " + select);
 					break;
 			}
 		}while(select != 0);

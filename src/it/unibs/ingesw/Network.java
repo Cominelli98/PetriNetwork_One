@@ -12,16 +12,23 @@ public class Network {
 	private String name;
 	static int network_id = 0;
 	
+
+
+
 	public Network (String name) {
 		locations = new ArrayList<Location>();
 		transitions = new ArrayList<Transition>();
 		netLinks = new ArrayList<Link>();
-		this.name = name;
+		this.name = this.name;
 		this.netId = network_id++;
 	}
 	
 	
 	
+	
+
+
+
 	public void addLocation (String name) {
 		locations.add(new Location(netId, locations.size() /*da cambiare se voglio aggiungere la rimozione*/, name));
 	}
@@ -113,4 +120,12 @@ public class Network {
 	public Location getLastLocation() {
 		return locations.get(locations.size()-1);
 	}
+	
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+
 }
