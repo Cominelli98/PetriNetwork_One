@@ -39,7 +39,6 @@ public class Menu {
 		
 		networks = new ArrayList<>();
 		Network.network_id = networks.size(); //TODO get biggest id	
-		 scanner = new Scanner(System.in);
 	}
 	
 	public void startMenu() {
@@ -49,7 +48,7 @@ public class Menu {
 				System.out.println(s);
 			}
 			
-			select = Utility.readLimitedInt(0, 1, scanner);
+			select = Utility.readLimitedInt(0, 1);
 			switch (select) {
 				case 1:
 					createNetwork();
@@ -68,7 +67,7 @@ public class Menu {
 	
 	public Network createNetwork() {
 		System.out.println("Inserisci il nome della nuova rete: ");
-		String name = Utility.readString(scanner);
+		String name = Utility.readString();
 		Network network = new Network(name);
 		networks.add(network);
 		currentNetwork = network;
@@ -90,7 +89,7 @@ public class Menu {
 					createTransition();
 					System.out.println(ASKLINK);
 					System.out.print(currentNetwork.getLocationsList());
-					num = Utility.readLimitedInt(0, currentNetwork.getLocations().size()-1, scanner);
+					num = Utility.readLimitedInt(0, currentNetwork.getLocations().size()-1);
 					createLink(currentNetwork.getLastTransition(), currentNetwork.getLocation(num));
 					num = -1;
 					break;
@@ -98,7 +97,7 @@ public class Menu {
 					createLocation();
 					System.out.println(ASKLINK);
 					System.out.print(currentNetwork.getTransitionsList());
-					num = Utility.readLimitedInt(0, currentNetwork.getTransitions().size()-1, scanner);
+					num = Utility.readLimitedInt(0, currentNetwork.getTransitions().size()-1);
 					createLink(currentNetwork.getTransition(num), currentNetwork.getLastLocation());
 					num = -1;
 					break;
@@ -115,13 +114,13 @@ public class Menu {
 	
 	private void createLocation() {
 		System.out.println("Inserisci il nome della nuova location: ");
-		String name = Utility.readString(scanner);
+		String name = Utility.readString();
 		currentNetwork.addLocation(name);
 	}
 	
 	private void createTransition() {
 		System.out.println("Inserisci il nome della nuova transition: ");
-		String name = Utility.readString(scanner);
+		String name = Utility.readString();
 		currentNetwork.addTransition(name);
 	}
 	
