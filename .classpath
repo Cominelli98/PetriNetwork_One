@@ -6,7 +6,7 @@
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/comin/eclipse-workspace/IngeSw1/gson-2.8.7.jar">
+	<classpathentry kind="lib" path="gson/gson-2.8.7.jar">
 		<attributes>
 			<attribute name="module" value="true"/>
 		</attributes>

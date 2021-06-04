@@ -12,8 +12,8 @@ public class Menu {
 	String MENUSTART[] = {
 			"MENU:",
 			"___________________________",
-			"1:crea Network",
-			"0:esci",
+			"1:Crea Network",
+			"0:Esci",
 			"___________________________",
 			
 	};
@@ -21,18 +21,23 @@ public class Menu {
 	String MENUNETWORK[] = {
 			"Scegli cosa fare:",
 			"___________________________",
-			"1:crea transition",
-			"2:crea location",
-			"3:crea link",
-			"0:esci",
+			"1:Crea transition",
+			"2:Crea location",
+			"3:Crea link",
+			"4:Salva rete",
+			"0:Esci",
 			"___________________________"};
 	
 	String ASKLINK = "A cosa vuoi collegarla? Inserisci il numero relativo";
+	String SALVATAGGIO = "Salvataggio eseguito";
+	String NOME_GIA_PRESENTE_RETE = "Esiste già una rete con questo nome";
+	String NOME_GIA_PRESENTE_LOCATION = "Esiste già una location con questo nome";
+	String NOME_GIA_PRESENTE_TRANSITION = "Esiste già una transition con questo nome";
+	
 	
 	private int idNet;
 	private Network currentNetwork;
 	private ArrayList<Network> networks;
-	Scanner scanner;
 	
 	public Menu() {
 		
@@ -53,7 +58,7 @@ public class Menu {
 					createNetwork();
 					break;
 				case 0:
-					scanner.close();
+					Utility.close();
 					break;
 
 				default:
@@ -70,9 +75,10 @@ public class Menu {
 		if(networks.size()>0) {
 		do {
 			name = Utility.readString();
-			for (int i = 0; i < networks.size(); i++) {
-				if(networks.get(i).getName() == name) {
+			for (Network n : networks) {
+				if(n.getName() == name) {
 					isEqual = true;
+					System.out.println(NOME_GIA_PRESENTE_RETE);
 				}
 			}
 		}while(isEqual);
@@ -90,7 +96,7 @@ public class Menu {
 			for (String s : MENUNETWORK) {
 				System.out.println(s);
 			}
-			select = Utility.readLimitedInt(0, 3); //TODO: CONTROL
+			select = Utility.readLimitedInt(0, MENUNETWORK.length-3); //TODO: CONTROL
 			var num = -1;
 			switch (select) {
 				
@@ -115,6 +121,9 @@ public class Menu {
 				case 3:
 					//createlink();
 					break;
+				case 4:
+					saveNetOnFile();
+					break;
 				default:
 					break;
 			}
@@ -124,13 +133,33 @@ public class Menu {
 	
 	private void createLocation() {
 		System.out.println("Inserisci il nome della nuova location: ");
-		String name = Utility.readString();
+		boolean isEqual = false;
+		String name;
+		do {
+			name = Utility.readString();
+			for (Location l : currentNetwork.getLocations()) {
+				if(l.getNodeName() == name) {
+					isEqual = true;
+					System.out.println(NOME_GIA_PRESENTE_LOCATION);
+				}
+			}
+		}while(isEqual);
 		currentNetwork.addLocation(name);
 	}
 	
 	private void createTransition() {
 		System.out.println("Inserisci il nome della nuova transition: ");
-		String name = Utility.readString();
+		boolean isEqual = false;
+		String name;
+		do {
+			name = Utility.readString();
+			for (Transition l : currentNetwork.getTransitions()) {
+				if(l.getNodeName() == name) {
+					isEqual = true;
+					System.out.println(NOME_GIA_PRESENTE_TRANSITION);
+				}
+			}
+		}while(isEqual);
 		currentNetwork.addTransition(name);
 	}
 	
@@ -142,6 +171,11 @@ public class Menu {
 		createTransition();
 		currentNetwork.addLink(new Link(currentNetwork.getTransition(0), currentNetwork.getLocation(0), currentNetwork.getNetId()));
 		
+	}
+	
+	private void saveNetOnFile(){	
+		WriteN.save(currentNetwork);
+		System.out.println(SALVATAGGIO);
 	}
 	//pane pane pane pane
 }

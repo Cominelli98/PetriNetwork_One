@@ -19,7 +19,7 @@ public class Network {
 		locations = new ArrayList<Location>();
 		transitions = new ArrayList<Transition>();
 		netLinks = new ArrayList<Link>();
-		this.name = this.name;
+		name = this.name;
 		this.netId = network_id++;
 	}
 	
