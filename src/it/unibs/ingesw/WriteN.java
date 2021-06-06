@@ -1,6 +1,7 @@
 package it.unibs.ingesw;
 
 
+import com.google.gson.Gson;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -24,8 +25,7 @@ public final class WriteN {
 		try {
 			f = new FileWriter("prova.txt", exist);
 			variabileNik = gson.toJson(net, net.getClass())+"\n";
-			//f.write(variabileNik);
-			System.out.println(variabileNik);
+			f.append(variabileNik);
 			f.close();
 		} catch (IOException e) {
 			e.printStackTrace();
