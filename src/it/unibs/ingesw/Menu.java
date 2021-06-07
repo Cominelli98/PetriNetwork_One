@@ -1,5 +1,7 @@
 package it.unibs.ingesw;
 
+import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -25,6 +27,7 @@ public class Menu {
 			"2:Crea location",
 			"3:Crea link",
 			"4:Salva rete",
+			"5:Prova lettura",
 			"0:Esci",
 			"___________________________"};
 	
@@ -42,7 +45,7 @@ public class Menu {
 	public Menu() {
 		
 		networks = new ArrayList<>();
-		Network.network_id = networks.size(); //TODO get biggest id	
+		Network.network_id = Utility.getMax(ReadN.getNetIDsFromFile());
 	}
 	
 	public void startMenu() {
@@ -133,6 +136,8 @@ public class Menu {
 				case 4:
 					saveNetOnFile();
 					break;
+				case 5:
+				ReadN.getNetIDsFromFile();
 				default:
 					break;
 			}

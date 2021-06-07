@@ -18,12 +18,12 @@ public final class WriteN {
 	
 	public static void save(Network net) {
 		Gson gson = new Gson();
-		File data = new File("prova.txt");
+		File data = new File("data.txt");
 		boolean exist = data.exists();
 		FileWriter f;
 		String variabileNik;
 		try {
-			f = new FileWriter("prova.txt", exist);
+			f = new FileWriter(data, exist);
 			variabileNik = gson.toJson(net, net.getClass())+"\n";
 			f.append(variabileNik);
 			f.close();

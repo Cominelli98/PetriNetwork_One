@@ -53,4 +53,12 @@ public final class Utility {
 	public static void close() {
 		scanner.close();
 	}
+	
+	public static int getMax(ArrayList<Integer> integer) {
+	 int max = 0;
+	 for(Integer n : integer) {
+		 if(n>max) max = n;
+	 }
+	 return max;
+	}
 }

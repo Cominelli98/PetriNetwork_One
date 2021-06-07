@@ -17,7 +17,7 @@ public class Network {
 		transitions = new ArrayList<Transition>();
 		netLinks = new ArrayList<Link>();
 		this.name = name;
-		this.netId = network_id++;
+		this.netId = ++network_id;
 	}
 
 	public void addLocation (String name) {
