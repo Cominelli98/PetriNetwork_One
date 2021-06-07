@@ -71,17 +71,19 @@ public class Menu {
 	public Network createNetwork() {
 		System.out.println("Inserisci il nome della nuova rete: ");
 		String name;
-		boolean isEqual = false;
+		boolean isEqual;
 		if(networks.size()>0) {
-		do {
-			name = Utility.readString();
-			for (Network n : networks) {
-				if(n.getName() == name) {
-					isEqual = true;
-					System.out.println(NOME_GIA_PRESENTE_RETE);
+			do {
+				isEqual = false;
+				name = Utility.readString();
+				for (Network n : networks) {
+					if(n.getName().equals(name)) {
+						isEqual = true;
+						System.out.println(NOME_GIA_PRESENTE_RETE);
+						break;
+					}
 				}
-			}
-		}while(isEqual);
+			}while(isEqual);
 		}else {
 			name = Utility.readString();
 		}
@@ -133,14 +135,16 @@ public class Menu {
 	
 	private void createLocation() {
 		System.out.println("Inserisci il nome della nuova location: ");
-		boolean isEqual = false;
+		boolean isEqual;
 		String name;
 		do {
+			isEqual = false;
 			name = Utility.readString();
 			for (Location l : currentNetwork.getLocations()) {
-				if(l.getNodeName() == name) {
+				if(l.getNodeName().equals(name)) {
 					isEqual = true;
 					System.out.println(NOME_GIA_PRESENTE_LOCATION);
+					break;
 				}
 			}
 		}while(isEqual);
@@ -149,12 +153,13 @@ public class Menu {
 	
 	private void createTransition() {
 		System.out.println("Inserisci il nome della nuova transition: ");
-		boolean isEqual = false;
+		boolean isEqual;
 		String name;
 		do {
+			isEqual = false;
 			name = Utility.readString();
 			for (Transition l : currentNetwork.getTransitions()) {
-				if(l.getNodeName() == name) {
+				if(l.getNodeName().equals(name)) {
 					isEqual = true;
 					System.out.println(NOME_GIA_PRESENTE_TRANSITION);
 				}

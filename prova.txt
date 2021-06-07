@@ -1,2 +1,0 @@
-{"locations":[{"netId":0,"nodeId":0,"nodeName":"d","links":[]}],"transitions":[{"netId":0,"nodeId":0,"nodeName":"d","links":[]}],"netLinks":[{"transition":{"netId":0,"nodeId":0,"nodeName":"d","links":[]},"location":{"netId":0,"nodeId":0,"nodeName":"d","links":[]},"netId":0}],"netId":0}
-{"locations":[{"netId":1,"nodeId":0,"nodeName":"r","links":[]}],"transitions":[{"netId":1,"nodeId":0,"nodeName":"r","links":[]}],"netLinks":[{"transition":{"netId":1,"nodeId":0,"nodeName":"r","links":[]},"location":{"netId":1,"nodeId":0,"nodeName":"r","links":[]},"netId":1}],"netId":1}
