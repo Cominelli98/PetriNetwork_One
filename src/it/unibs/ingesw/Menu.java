@@ -1,5 +1,7 @@
 package it.unibs.ingesw;
 
+import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -25,6 +27,7 @@ public class Menu {
 			"2:Crea location",
 			"3:Crea link",
 			"4:Salva rete",
+			"5:Prova lettura",
 			"0:Esci",
 			"___________________________"};
 	
@@ -42,7 +45,7 @@ public class Menu {
 	public Menu() {
 		
 		networks = new ArrayList<>();
-		Network.network_id = networks.size(); //TODO get biggest id	
+		Network.network_id = Utility.getMax(ReadN.getNetIDsFromFile());
 	}
 	
 	public void startMenu() {
@@ -121,23 +124,20 @@ public class Menu {
 					num = -1;
 					break;
 				case 3:
+					int loc;
+					int trans;
 					System.out.print(currentNetwork.getTransitionsList());
-					int trans = Utility.readLimitedInt(0, currentNetwork.getTransitions().size()-1);
+					trans = Utility.readLimitedInt(0, currentNetwork.getTransitions().size()-1);
 					System.out.println(ASKLINK);
 					System.out.print(currentNetwork.getLocationsList());
-					int loc = Utility.readLimitedInt(0, currentNetwork.getLocations().size()-1);
-					if(checkIfLinkAlreadyExist(currentNetwork.getTransition(trans), currentNetwork.getLocation(loc))) {
-						System.out.println("Link già esistente");
-					}else {
-						createLink(currentNetwork.getTransition(trans), currentNetwork.getLocation(loc));
-					}
-						
-					
-					
+					loc = Utility.readLimitedInt(0, currentNetwork.getLocations().size()-1);
+					createLink(currentNetwork.getTransition(trans), currentNetwork.getLocation(loc));
 					break;
 				case 4:
 					saveNetOnFile();
 					break;
+				case 5:
+				ReadN.getNetIDsFromFile();
 				default:
 					break;
 			}
@@ -186,18 +186,6 @@ public class Menu {
 		
 		currentNetwork.addLink(new Link(t, l, currentNetwork.getNetId()));
 	}
-	
-	private boolean checkIfLinkAlreadyExist(Transition t, Location l) {
-		
-		for (int i = 0; i < currentNetwork.getNetLinks().size(); i++) {
-			if (currentNetwork.getNetLinks().get(i).getTransition().equals(t) &&
-					currentNetwork.getNetLinks().get(i).getLocation().equals(l)) {
-				return true;
-			}
-		}
-		return false;
-	}
-	
 	private void createBase() {
 		createLocation();
 		createTransition();
