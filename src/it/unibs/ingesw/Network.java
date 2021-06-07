@@ -12,9 +12,6 @@ public class Network {
 	private String name;
 	static int network_id = 0;
 	
-
-
-
 	public Network (String name) {
 		locations = new ArrayList<Location>();
 		transitions = new ArrayList<Transition>();
@@ -22,12 +19,6 @@ public class Network {
 		this.name = name;
 		this.netId = network_id++;
 	}
-	
-	
-	
-	
-
-
 
 	public void addLocation (String name) {
 		locations.add(new Location(netId, locations.size() /*da cambiare se voglio aggiungere la rimozione*/, name));

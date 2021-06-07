@@ -121,7 +121,14 @@ public class Menu {
 					num = -1;
 					break;
 				case 3:
-					//createlink();
+					int loc;
+					int trans;
+					System.out.print(currentNetwork.getTransitionsList());
+					trans = Utility.readLimitedInt(0, currentNetwork.getTransitions().size()-1);
+					System.out.println(ASKLINK);
+					System.out.print(currentNetwork.getLocationsList());
+					loc = Utility.readLimitedInt(0, currentNetwork.getLocations().size()-1);
+					createLink(currentNetwork.getTransition(trans), currentNetwork.getLocation(loc));
 					break;
 				case 4:
 					saveNetOnFile();
