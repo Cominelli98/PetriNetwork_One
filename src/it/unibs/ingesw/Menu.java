@@ -146,6 +146,7 @@ public class Menu {
 		}
 	
 	private void createLocation() {
+		
 		System.out.println("Inserisci il nome della nuova location: ");
 		boolean isEqual;
 		String name;
@@ -164,6 +165,7 @@ public class Menu {
 	}
 	
 	private void createTransition() {
+		
 		System.out.println("Inserisci il nome della nuova transition: ");
 		boolean isEqual;
 		String name;
@@ -181,6 +183,7 @@ public class Menu {
 	}
 	
 	public void createLink(Transition t, Location l) {
+		
 		currentNetwork.addLink(new Link(t, l, currentNetwork.getNetId()));
 	}
 	
