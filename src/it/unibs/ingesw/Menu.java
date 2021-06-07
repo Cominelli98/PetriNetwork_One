@@ -121,25 +121,19 @@ public class Menu {
 					num = -1;
 					break;
 				case 3:
-					int loc;
-					int trans;
 					System.out.print(currentNetwork.getTransitionsList());
-					trans = Utility.readLimitedInt(0, currentNetwork.getTransitions().size()-1);
+					int trans = Utility.readLimitedInt(0, currentNetwork.getTransitions().size()-1);
 					System.out.println(ASKLINK);
 					System.out.print(currentNetwork.getLocationsList());
-					loc = Utility.readLimitedInt(0, currentNetwork.getLocations().size()-1);
-						isEqual = false;
-					for (int i = 0; i < currentNetwork.getNetLinks().size(); i++) {
-						if (currentNetwork.getNetLinks().get(i).getTransition().equals(currentNetwork.getTransition(trans)) &&
-								currentNetwork.getNetLinks().get(i).getLocation().equals(currentNetwork.getLocation(loc))) {
-							isEqual = true;
-							System.out.println("link già esistente");
-							break;
-						}
-					}
-					if (!isEqual) {
+					int loc = Utility.readLimitedInt(0, currentNetwork.getLocations().size()-1);
+					if(checkIfLinkAlreadyExist(currentNetwork.getTransition(trans), currentNetwork.getLocation(loc))) {
+						System.out.println("Link già esistente");
+					}else {
 						createLink(currentNetwork.getTransition(trans), currentNetwork.getLocation(loc));
 					}
+						
+					
+					
 					break;
 				case 4:
 					saveNetOnFile();
@@ -188,6 +182,17 @@ public class Menu {
 	
 	public void createLink(Transition t, Location l) {
 		currentNetwork.addLink(new Link(t, l, currentNetwork.getNetId()));
+	}
+	
+	private boolean checkIfLinkAlreadyExist(Transition t, Location l) {
+		
+		for (int i = 0; i < currentNetwork.getNetLinks().size(); i++) {
+			if (currentNetwork.getNetLinks().get(i).getTransition().equals(t) &&
+					currentNetwork.getNetLinks().get(i).getLocation().equals(l)) {
+				return true;
+			}
+		}
+		return false;
 	}
 	
 	private void createBase() {
