@@ -7,8 +7,6 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 
-import com.google.gson.Gson;
-
 
 public final class WriteN {
 	
@@ -20,13 +18,12 @@ public final class WriteN {
 		Gson gson = new Gson();
 		File data = new File("data.txt");
 		boolean exist = data.exists();
-		FileWriter f;
+		
 		String variabileNik;
-		try {
-			f = new FileWriter(data, exist);
+		try (FileWriter f = new FileWriter(data, exist)){
+			
 			variabileNik = gson.toJson(net, net.getClass())+"\n";
 			f.append(variabileNik);
-			f.close();
 		} catch (IOException e) {
 			e.printStackTrace();
 			System.out.println(SAVE_ERROR);

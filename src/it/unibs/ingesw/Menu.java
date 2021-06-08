@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 
+
 public class Menu {
 	
 	final String SELEZIONE = "Seleziona: ";
@@ -15,6 +16,7 @@ public class Menu {
 			"MENU:",
 			"___________________________",
 			"1:Crea Network",
+			"2:Salva reti",
 			"0:Esci",
 			"___________________________",
 			
@@ -26,9 +28,15 @@ public class Menu {
 			"1:Crea transition",
 			"2:Crea location",
 			"3:Crea link",
-			"4:Salva rete",
-			"5:Prova lettura",
 			"0:Esci",
+			"___________________________"};
+	
+	final String MENUSALVA[] = {
+			"Scegli cosa fare:",
+			"___________________________",
+			"1:Salva una rete",
+			"2:Salva tutte le reti",
+			"0:Indietro",
 			"___________________________"};
 	
 	final String ASKLINK = "A cosa vuoi collegarla? Inserisci il numero relativo";
@@ -37,9 +45,8 @@ public class Menu {
 	final String NOME_GIA_PRESENTE_LOCATION = "Esiste già una location con questo nome";
 	final String NOME_GIA_PRESENTE_TRANSITION = "Esiste già una transition con questo nome";
 	final String LINK_GIA_PRESENTE = "Link già presente";
+	final String RICHIESTA_SALVATAGGIO = "Quale rete vuoi salvare?";
 	
-	
-	private int idNet;
 	private Network currentNetwork;
 	private ArrayList<Network> networks;
 	
@@ -56,10 +63,19 @@ public class Menu {
 				System.out.println(s);
 			}
 			
-			select = Utility.readLimitedInt(0, 1);
+			select = Utility.readLimitedInt(0, 3);
 			switch (select) {
 				case 1:
 					createNetwork();
+					break;
+				case 2:
+					if(networks.size() != 0)
+						saveOption();
+					else
+						System.out.println("Non ci sono reti da salvare");
+					break;
+				case 3:
+					//TODO	VisualizzaRete
 					break;
 				case 0:
 					Utility.close();
@@ -73,24 +89,15 @@ public class Menu {
 	}
 	
 	public Network createNetwork() {
-		System.out.println("Inserisci il nome della nuova rete: ");
 		String name;
-		boolean isEqual;
-		if(networks.size()>0) {
-			do {
-				isEqual = false;
-				name = Utility.readString();
-				for (Network n : networks) {
-					if(n.getName().equals(name)) {
-						isEqual = true;
-						System.out.println(NOME_GIA_PRESENTE_RETE);
-						break;
-					}
-				}
-			}while(isEqual);
-		}else {
+		boolean exists;
+		do {
+			System.out.println("Inserisci il nome della nuova rete:");
 			name = Utility.readString();
-		}
+			exists = checkNetExistence(name);
+			if (exists)
+				System.out.println(NOME_GIA_PRESENTE_RETE);
+		}while(exists);
 		Network network = new Network(name);
 		networks.add(network);
 		currentNetwork = network;
@@ -137,17 +144,35 @@ public class Menu {
 					else
 						System.out.println(LINK_GIA_PRESENTE);
 					break;
-				case 4:
-					saveNetOnFile();
-					break;
-				case 5:
-				ReadN.getNetIDsFromFile();
 				default:
 					break;
 			}
 		}while(select != 0);
 		return network;
 		}
+	
+	private void saveOption() {
+		int select = -1;
+		for (String s : MENUSALVA)
+			System.out.println(s);
+		select = Utility.readLimitedInt(0, 2);
+		switch (select) {
+		case 0:
+			break;
+		case 1:
+			System.out.println("Quale rete vuoi salvare?");
+			System.out.println(getNetworksList());
+			int i = Utility.readLimitedInt(0, networks.size());
+			saveNetOnFile(networks.get(i));
+			//TODO salva 1 net
+		case 2:
+			for (Network n : networks)
+				saveNetOnFile(n);
+			//TODO salva tutte
+		default:
+			break;
+		}
+	}
 	
 	/**
 	 * Medoto che crea un nuovo posto nella rete con l'inserimento di un "nome" che necessariamente dovrà essere diverso da quelli già presenti
@@ -208,6 +233,19 @@ public class Menu {
 		return false;
 	}
 	
+	private boolean checkNetExistence(String name) {
+		if(networks.size()>0) {
+			for (Network n : networks) {
+				if(n.getName().equals(name)){
+					return true;
+				}
+			}
+		}
+		
+		return (ReadN.checkNetNameExistence(name));
+		
+	}
+	
 	public void createLink(Transition t, Location l) {
 		
 		currentNetwork.addLink(new Link(t, l, currentNetwork.getNetId()));
@@ -222,11 +260,21 @@ public class Menu {
 		currentNetwork.addLink(new Link(currentNetwork.getTransition(0), currentNetwork.getLocation(0), currentNetwork.getNetId()));
 		
 	}
+	
+	private StringBuffer getNetworksList(){
+		StringBuffer s = new StringBuffer("");
+		int i = 0;
+		for (Network n : networks) {
+			s.append(i++ + ")" + n.getName() + "\n");
+		}
+		return s;
+	}
 	/**
 	 * Metodo che richiama dalla classe statica WriteN il salvataggio su file delle reti create
 	 */
-	private void saveNetOnFile(){	
-		WriteN.save(currentNetwork);
-		System.out.println(SALVATAGGIO);
+	private void saveNetOnFile(Network n){
+		if (!ReadN.checkIdExistence(n.getNetId()))
+			WriteN.save(n);
+		System.out.println(SALVATAGGIO + " rete " + n.getName());
 	}
 }

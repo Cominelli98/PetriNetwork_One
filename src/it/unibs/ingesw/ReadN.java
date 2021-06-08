@@ -50,6 +50,13 @@ public final class ReadN {
 		return IDs;
 	}
 	
+	public static boolean checkIdExistence(int id) {
+		for (Integer intero : getNetIDsFromFile())
+			if(intero == id)
+				return true;
+		return false;
+	}
+	
 	/**
 	 * ritorna la lista dei nomi delle network salvate utile per fare delle scelte 
 	 * @return lista nomi network
@@ -84,6 +91,18 @@ public final class ReadN {
 			names.add(n.getName());
 		}
 		return names;
+	}
+	
+	public static boolean checkNetNameExistence(String s) {
+		try {
+			for (String string : getNames())
+			if (string.equals(s))
+				return true;
+			return false;
+		}catch(FileNotFoundException exception) {
+			exception.printStackTrace();
+			return false;
+		}
 	}
 	
 	/**

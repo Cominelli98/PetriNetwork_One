@@ -47,7 +47,6 @@ public final class Utility {
 	public static String readString() {
 		String name = scanner.next();
 		return name;
-	
 	}
 	
 	public static void close() {
