@@ -10,25 +10,30 @@ import com.google.gson.Gson;
 
 public final class ReadN {
 	
-	
+	/**
+	 * legge da file tutte le righe in cui sono state le network
+	 * @return	le righe del file data.txt
+	 * @throws FileNotFoundException
+	 */
 	public static ArrayList<String> readNets() throws FileNotFoundException {
-		BufferedReader reader = new BufferedReader(new FileReader("data.txt"));
 		String line;
 		ArrayList<String> lines = new ArrayList<>();
-		try {
+		try (BufferedReader reader = new BufferedReader(new FileReader("data.txt"))){
 			line = reader.readLine();
 			while(line != null) {
 				lines.add(line);
 				line = reader.readLine();
 			}
-			reader.close();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
 		return lines;
 	}
 	
-	//restituisce gli id delle network salvate permanentemente
+	/**
+	 * ritorna tutti gli id delle network salvate
+	 * @return id delle network
+	 */
 	public static ArrayList<Integer> getNetIDsFromFile() {
 		ArrayList<Integer> IDs = new ArrayList<>();
 		try {
@@ -45,15 +50,19 @@ public final class ReadN {
 		return IDs;
 	}
 	
-	//restituisce la lista delle network salvate
+	/**
+	 * ritorna la lista dei nomi delle network salvate utile per fare delle scelte 
+	 * @return lista nomi network
+	 */
 	public static StringBuffer getNetNamesList() {
 		StringBuffer names = new StringBuffer();
 		try {
 			ArrayList<String> nets = readNets();
-			Gson gson = new Gson();
+			int i = 0;
 			for(String s : nets) {
-				Network net = gson.fromJson(s, Network.class);
-				names.append(net.getNetId()+")"+net.getName());
+				Network net = jsonToNetwork(s);
+				names.append(i+")"+net.getName());
+				i++;
 			}
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
@@ -62,14 +71,33 @@ public final class ReadN {
 		return names;
 	}
 	
-	//restituisce la network con l'id specificato
+	/**
+	 * metodo per ottenere i nomi delle reti salvate
+	 * @return un arraylist di stringe con tutti i nomi delle nostre network salvate
+	 * @throws FileNotFoundException
+	 */
+	public static ArrayList<String> getNames() throws FileNotFoundException{
+		ArrayList<String> nets = readNets();
+		ArrayList<String> names = new ArrayList<>();
+		for(String s : nets) {
+			Network n = jsonToNetwork(s);
+			names.add(n.getName());
+		}
+		return names;
+	}
+	
+	/**
+	 * metodo per caricare una network con un dato id
+	 * @param netID della rete da caricare 
+	 * @return la network con l'id specificato
+	 */
 	public static Network getNetworkFromFile(int netID) {
 		Network net = null;
 		try {
 			ArrayList<String> nets = readNets();
 			Gson gson = new Gson();
 			for(String s : nets) {
-				net = gson.fromJson(s, Network.class);
+				net = jsonToNetwork(s);
 				if(net.getNetId() == netID) {
 					return net;
 				}
@@ -80,5 +108,15 @@ public final class ReadN {
 		}
 		
 		return net;
+	}
+	
+	/**
+	 * converte una stringa json in una network
+	 * @param s
+	 * @return network
+	 */
+	public static Network jsonToNetwork(String s) {
+		Gson gson = new Gson();
+		return gson.fromJson(s, Network.class);
 	}
 }
