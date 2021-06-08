@@ -8,10 +8,10 @@ import java.util.Scanner;
 
 public class Menu {
 	
-	String SELEZIONE = "Seleziona: ";
-	String ERRORE = "ERRORE INSERIMENTO: inserisci un numero sensato\n";
+	final String SELEZIONE = "Seleziona: ";
+	final String ERRORE = "ERRORE INSERIMENTO: inserisci un numero sensato\n";
 	
-	String MENUSTART[] = {
+	final String MENUSTART[] = {
 			"MENU:",
 			"___________________________",
 			"1:Crea Network",
@@ -20,7 +20,7 @@ public class Menu {
 			
 	};
 	
-	String MENUNETWORK[] = {
+	final String MENUNETWORK[] = {
 			"Scegli cosa fare:",
 			"___________________________",
 			"1:Crea transition",
@@ -31,11 +31,12 @@ public class Menu {
 			"0:Esci",
 			"___________________________"};
 	
-	String ASKLINK = "A cosa vuoi collegarla? Inserisci il numero relativo";
-	String SALVATAGGIO = "Salvataggio eseguito";
-	String NOME_GIA_PRESENTE_RETE = "Esiste già una rete con questo nome";
-	String NOME_GIA_PRESENTE_LOCATION = "Esiste già una location con questo nome";
-	String NOME_GIA_PRESENTE_TRANSITION = "Esiste già una transition con questo nome";
+	final String ASKLINK = "A cosa vuoi collegarla? Inserisci il numero relativo";
+	final String SALVATAGGIO = "Salvataggio eseguito";
+	final String NOME_GIA_PRESENTE_RETE = "Esiste già una rete con questo nome";
+	final String NOME_GIA_PRESENTE_LOCATION = "Esiste già una location con questo nome";
+	final String NOME_GIA_PRESENTE_TRANSITION = "Esiste già una transition con questo nome";
+	final String LINK_GIA_PRESENTE = "Link già presente";
 	
 	
 	private int idNet;
@@ -101,7 +102,7 @@ public class Menu {
 			for (String s : MENUNETWORK) {
 				System.out.println(s);
 			}
-			select = Utility.readLimitedInt(0, MENUNETWORK.length-3); //TODO: CONTROL
+			select = Utility.readLimitedInt(0, MENUNETWORK.length-3);
 			var num = -1;
 			switch (select) {
 				
@@ -131,10 +132,10 @@ public class Menu {
 					System.out.println(ASKLINK);
 					System.out.print(currentNetwork.getLocationsList());
 					loc = Utility.readLimitedInt(0, currentNetwork.getLocations().size()-1);
-					if(!checkIfLinkAlreadyExist(currentNetwork.getTransition(trans), currentNetwork.getLocation(loc)))
+					if(!checkLinkExistence(currentNetwork.getTransition(trans), currentNetwork.getLocation(loc)))
 						createLink(currentNetwork.getTransition(trans), currentNetwork.getLocation(loc));
 					else
-						System.out.println("Link già esistente");
+						System.out.println(LINK_GIA_PRESENTE);
 					break;
 				case 4:
 					saveNetOnFile();
@@ -148,6 +149,9 @@ public class Menu {
 		return network;
 		}
 	
+	/**
+	 * Medoto che crea un nuovo posto nella rete con l'inserimento di un "nome" che necessariamente dovrà essere diverso da quelli già presenti
+	 */
 	private void createLocation() {
 		
 		System.out.println("Inserisci il nome della nuova location: ");
@@ -166,8 +170,34 @@ public class Menu {
 		}while(isEqual);
 		currentNetwork.addLocation(name);
 	}
+	/**
+	 * Medoto che crea una nuova transizione nella rete con l'inserimento di un "nome" che necessariamente dovrà essere diverso da quelli già presenti
+	 */
+	private void createTransition() {
+			
+			System.out.println("Inserisci il nome della nuova transition: ");
+			boolean isEqual;
+			String name;
+			do {
+				isEqual = false;
+				name = Utility.readString();
+				for (Transition l : currentNetwork.getTransitions()) {
+					if(l.getNodeName().equals(name)) {
+						isEqual = true;
+						System.out.println(NOME_GIA_PRESENTE_TRANSITION);
+					}
+				}
+			}while(isEqual);
+			currentNetwork.addTransition(name);
+		}
 	
-	private boolean checkIfLinkAlreadyExist(Transition t, Location l) {
+	/**
+	 * Metodo utilizzato per controllare che il link che si stà per creare non esisti già
+	 * @param t transition
+	 * @param l location
+	 * @return boolean
+	 */
+	private boolean checkLinkExistence(Transition t, Location l) {
 		
 		for (int i = 0; i < currentNetwork.getNetLinks().size(); i++) {
 			if(currentNetwork.getNetLinks().get(i).getTransition().equals(t) &&
@@ -178,38 +208,25 @@ public class Menu {
 		return false;
 	}
 	
-	private void createTransition() {
-		
-		System.out.println("Inserisci il nome della nuova transition: ");
-		boolean isEqual;
-		String name;
-		do {
-			isEqual = false;
-			name = Utility.readString();
-			for (Transition l : currentNetwork.getTransitions()) {
-				if(l.getNodeName().equals(name)) {
-					isEqual = true;
-					System.out.println(NOME_GIA_PRESENTE_TRANSITION);
-				}
-			}
-		}while(isEqual);
-		currentNetwork.addTransition(name);
-	}
-	
 	public void createLink(Transition t, Location l) {
 		
 		currentNetwork.addLink(new Link(t, l, currentNetwork.getNetId()));
 	}
+	
+	/**
+	 * Metodo utilizzato per riempire al momento della creazione di una nuova rete un posto ed una transizione, infine li collega da un link
+	 */
 	private void createBase() {
 		createLocation();
 		createTransition();
 		currentNetwork.addLink(new Link(currentNetwork.getTransition(0), currentNetwork.getLocation(0), currentNetwork.getNetId()));
 		
 	}
-	
+	/**
+	 * Metodo che richiama dalla classe statica WriteN il salvataggio su file delle reti create
+	 */
 	private void saveNetOnFile(){	
 		WriteN.save(currentNetwork);
 		System.out.println(SALVATAGGIO);
 	}
-	//pane pane pane pane
 }

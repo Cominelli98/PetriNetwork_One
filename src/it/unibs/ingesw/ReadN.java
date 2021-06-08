@@ -95,7 +95,6 @@ public final class ReadN {
 		Network net = null;
 		try {
 			ArrayList<String> nets = readNets();
-			Gson gson = new Gson();
 			for(String s : nets) {
 				net = jsonToNetwork(s);
 				if(net.getNetId() == netID) {
