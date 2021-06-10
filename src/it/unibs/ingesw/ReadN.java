@@ -1,6 +1,7 @@
 package it.unibs.ingesw;
 
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
@@ -8,7 +9,11 @@ import java.util.ArrayList;
 
 import com.google.gson.Gson;
 
+
+
 public final class ReadN {
+	
+	final static private int ID_INIZIALE = -1;
 	
 	/**
 	 * legge da file tutte le righe in cui sono state le network
@@ -44,8 +49,7 @@ public final class ReadN {
 				IDs.add(net.getNetId());
 			}
 		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+			IDs.add(ID_INIZIALE);
 		}
 		return IDs;
 	}
@@ -136,5 +140,13 @@ public final class ReadN {
 	public static Network jsonToNetwork(String s) {
 		Gson gson = new Gson();
 		return gson.fromJson(s, Network.class);
+	}
+	
+	public static boolean dataIsEmpty() {
+		
+		File f = new File("data.txt");
+		if(f.length()==0)
+			return true;
+		return false;
 	}
 }

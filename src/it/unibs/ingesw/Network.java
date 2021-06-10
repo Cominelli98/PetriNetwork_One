@@ -104,6 +104,14 @@ public class Network {
 		return s;
 	}
 	
+	public StringBuffer getLinksList() {
+		StringBuffer s = new StringBuffer("");
+		for (int i = 0; i < netLinks.size(); i++) {
+			s.append(i + ")" + netLinks.get(i).getLocation().getNodeName() + "----" + netLinks.get(i).getTransition().getNodeName() + "\n");
+		}
+		return s;
+	}
+	
 	public Transition getLastTransition() {
 		return transitions.get(transitions.size()-1);
 	}

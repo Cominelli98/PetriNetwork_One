@@ -1,5 +1,6 @@
 package it.unibs.ingesw;
 
+import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -17,6 +18,7 @@ public class Menu {
 			"___________________________",
 			"1:Crea Network",
 			"2:Salva reti",
+			"3:Visualizza reti",
 			"0:Esci",
 			"___________________________",
 			
@@ -25,10 +27,10 @@ public class Menu {
 	final String MENUNETWORK[] = {
 			"Scegli cosa fare:",
 			"___________________________",
-			"1:Crea transition",
-			"2:Crea location",
+			"1:Crea location",
+			"2:Crea transition",
 			"3:Crea link",
-			"0:Esci",
+			"0:Indietro",
 			"___________________________"};
 	
 	final String MENUSALVA[] = {
@@ -36,6 +38,15 @@ public class Menu {
 			"___________________________",
 			"1:Salva una rete",
 			"2:Salva tutte le reti",
+			"0:Indietro",
+			"___________________________"};
+	final String MENUVISUALIZZA[] = {
+			"Cosa vuoi visualizzare?:",
+			"___________________________",
+			"1:Visualizza elenco locations",
+			"2:Visualizza elenco transitions",
+			"3:Visualizza elenco link ",
+			"4:Visualizza rete complessiva",
 			"0:Indietro",
 			"___________________________"};
 	
@@ -53,7 +64,9 @@ public class Menu {
 	public Menu() {
 		
 		networks = new ArrayList<>();
+		WriteN.fileCreation();
 		Network.network_id = Utility.getMax(ReadN.getNetIDsFromFile());
+		
 	}
 	
 	public void startMenu() {
@@ -75,19 +88,58 @@ public class Menu {
 						System.out.println("Non ci sono reti da salvare");
 					break;
 				case 3:
-					//TODO	VisualizzaRete
+					if(networks.size() != 0)
+					netViewer();
+					else {
+						System.out.println("Non ci sono reti da visualizzare");
+					}
 					break;
 				case 0:
 					Utility.close();
-					break;
-
-				default:
 					break;
 			}
 		}while(select != 0);
 		
 	}
 	
+	private void netViewer() {
+		System.out.println("Quale rete vuoi visualizzare?");
+		System.out.println(getNetworksList());
+		int i = Utility.readLimitedInt(0, networks.size());
+		int select = -1;
+		do {
+			for (String s : MENUVISUALIZZA)
+				System.out.println(s);
+			select = Utility.readLimitedInt(0, 4);
+			
+			switch(select) {
+			case 1:
+				System.out.println("ELENCO LOCATIONS:");
+				System.out.println(networks.get(i).getLocationsList());
+				break;
+			case 2:
+				System.out.println("ELENCO TRANSITIONS:");
+				System.out.println(networks.get(i).getTransitionsList());
+				break;
+			case 3:
+				System.out.println("ELENCO LINKS:");
+				System.out.println(networks.get(i).getLinksList());
+				break;
+			case 4:
+				System.out.println("ELENCO LOCATIONS:");
+				System.out.println(networks.get(i).getLocationsList());
+				System.out.println("ELENCO TRANSITIONS:");
+				System.out.println(networks.get(i).getTransitionsList());
+				System.out.println("ELENCO LINKS:");
+				System.out.println(networks.get(i).getLinksList());
+				break;
+			case 0:
+				break;
+			}
+		}while (select != 0);
+		
+	}
+
 	public Network createNetwork() {
 		String name;
 		boolean exists;
@@ -116,14 +168,6 @@ public class Menu {
 			case 0:
 				break;
 				case 1:
-					createTransition();
-					System.out.println(ASKLINK);
-					System.out.print(currentNetwork.getLocationsList());
-					num = Utility.readLimitedInt(0, currentNetwork.getLocations().size()-1);
-					createLink(currentNetwork.getLastTransition(), currentNetwork.getLocation(num));
-					num = -1;
-					break;
-				case 2:
 					createLocation();
 					System.out.println(ASKLINK);
 					System.out.print(currentNetwork.getTransitionsList());
@@ -131,20 +175,28 @@ public class Menu {
 					createLink(currentNetwork.getTransition(num), currentNetwork.getLastLocation());
 					num = -1;
 					break;
+				case 2:
+					createTransition();
+					System.out.println(ASKLINK);
+					System.out.print(currentNetwork.getLocationsList());
+					num = Utility.readLimitedInt(0, currentNetwork.getLocations().size()-1);
+					createLink(currentNetwork.getLastTransition(), currentNetwork.getLocation(num));
+					num = -1;
+					break;
 				case 3:
 					int loc;
 					int trans;
-					System.out.print(currentNetwork.getTransitionsList());
-					trans = Utility.readLimitedInt(0, currentNetwork.getTransitions().size()-1);
-					System.out.println(ASKLINK);
+					System.out.println("ELENCO LOCATIONS");
 					System.out.print(currentNetwork.getLocationsList());
 					loc = Utility.readLimitedInt(0, currentNetwork.getLocations().size()-1);
+					System.out.println(ASKLINK);
+					System.out.println("ELENCO TRANSITIONS");
+					System.out.print(currentNetwork.getTransitionsList());
+					trans = Utility.readLimitedInt(0, currentNetwork.getTransitions().size()-1);
 					if(!checkLinkExistence(currentNetwork.getTransition(trans), currentNetwork.getLocation(loc)))
 						createLink(currentNetwork.getTransition(trans), currentNetwork.getLocation(loc));
 					else
 						System.out.println(LINK_GIA_PRESENTE);
-					break;
-				default:
 					break;
 			}
 		}while(select != 0);
@@ -164,12 +216,10 @@ public class Menu {
 			System.out.println(getNetworksList());
 			int i = Utility.readLimitedInt(0, networks.size());
 			saveNetOnFile(networks.get(i));
-			//TODO salva 1 net
+			break;
 		case 2:
 			for (Network n : networks)
 				saveNetOnFile(n);
-			//TODO salva tutte
-		default:
 			break;
 		}
 	}

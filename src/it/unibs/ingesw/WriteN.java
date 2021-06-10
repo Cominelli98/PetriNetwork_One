@@ -31,5 +31,17 @@ public final class WriteN {
 		
 	}
 	
+	public static void fileCreation() {
+		
+		File f = new File("data.txt");
+		if (!f.exists()) {
+			try {
+				f.createNewFile();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		}
+	}
+	
 }
 	
