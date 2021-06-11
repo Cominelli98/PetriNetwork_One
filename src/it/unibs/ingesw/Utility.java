@@ -7,7 +7,7 @@ public final class Utility {
 	
 	
 	private static Scanner scanner = creaScanner();
-	private final static String ERRORE_INSERIMENTO = "Errore inserimento, controlla il formato";
+	private final static String ERRORE_INSERIMENTO = "Errore inserimento, per favore inserisci un valore appropriato";
 	
 	private static Scanner creaScanner() {
 		Scanner creato = new Scanner(System.in);
@@ -59,5 +59,13 @@ public final class Utility {
 		 if(n>max) max = n;
 	 }
 	 return max;
+	}
+	
+	
+	
+	public static boolean nameCheck(NameGiver n, String s) {
+		if (n.getName().toUpperCase().equals(s.toUpperCase()))
+			return true;
+		return false;
 	}
 }

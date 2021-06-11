@@ -3,7 +3,7 @@ package it.unibs.ingesw;
 import java.util.ArrayList;
 
 
-public class Network {
+public class Network implements NameGiver{
 	
 	private ArrayList<Location> locations;
 	private ArrayList<Transition> transitions;
@@ -91,7 +91,7 @@ public class Network {
 	public StringBuffer getTransitionsList() {
 		StringBuffer s = new StringBuffer("");
 		for (int i = 0; i<transitions.size(); i++) {
-			s.append(i + ")" + transitions.get(i).getNodeName() + "\n");
+			s.append(i + ")" + transitions.get(i).getName() + "\n");
 		}
 		return s;
 	}
@@ -99,7 +99,7 @@ public class Network {
 	public StringBuffer getLocationsList() {
 		StringBuffer s = new StringBuffer("");
 		for (int i = 0; i<locations.size(); i++) {
-			s.append(i + ")" + locations.get(i).getNodeName() + "\n");
+			s.append(i + ")" + locations.get(i).getName() + "\n");
 		}
 		return s;
 	}
@@ -107,7 +107,7 @@ public class Network {
 	public StringBuffer getLinksList() {
 		StringBuffer s = new StringBuffer("");
 		for (int i = 0; i < netLinks.size(); i++) {
-			s.append(i + ")" + netLinks.get(i).getLocation().getNodeName() + "----" + netLinks.get(i).getTransition().getNodeName() + "\n");
+			s.append(i + ")" + netLinks.get(i).getLocation().getName() + "----" + netLinks.get(i).getTransition().getName() + "\n");
 		}
 		return s;
 	}

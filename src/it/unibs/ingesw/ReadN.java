@@ -84,7 +84,7 @@ public final class ReadN {
 	
 	/**
 	 * metodo per ottenere i nomi delle reti salvate
-	 * @return un arraylist di stringe con tutti i nomi delle nostre network salvate
+	 * @return un arraylist di stringhe con tutti i nomi delle nostre network salvate
 	 * @throws FileNotFoundException
 	 */
 	public static ArrayList<String> getNames() throws FileNotFoundException{
