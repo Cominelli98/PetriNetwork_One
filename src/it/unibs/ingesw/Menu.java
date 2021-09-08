@@ -48,7 +48,9 @@ public class Menu {
 			"4:Visualizza rete complessiva",
 			"0:Indietro",
 			"___________________________"};
-	
+	final String NO_RETI_V ="non ci sono reti da visualizzare";
+	final String NO_RETI_S ="non ci sono reti da salvare";
+
 	final String ASKLINK = "A cosa vuoi collegarla? Inserisci il numero relativo";
 	final String SALVATAGGIO = "Salvataggio eseguito";
 	final String NOME_GIA_PRESENTE_RETE = "Esiste già una rete con questo nome";
@@ -179,6 +181,10 @@ public class Menu {
 	 * Metodo dedicato al salvataggio delle reti su file, permette di salvare una rete unica o tutte quelle create.
 	 */
 	private void saveOption() {
+		if(networks.size() == 0) {
+			System.out.println(NO_RETI_S);
+			return;
+		}
 		int select = -1;
 		for (String s : MENUSALVA)
 			System.out.println(s);
@@ -203,6 +209,10 @@ public class Menu {
 	 * Stampa a video elenco di posti, transizioni, link e reti complessive
 	 */
 	private void netViewer() {
+		if(networks.size() == 0) {
+			System.out.println(NO_RETI_V);
+			return;
+		}
 		System.out.println("Quale rete vuoi visualizzare?");
 		System.out.println(getNetworksList());
 		int i = Utility.readLimitedInt(0, networks.size());

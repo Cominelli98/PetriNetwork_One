@@ -1,0 +1,1447 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.yattasolutions.uml.diagrams.classifier:ClassDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.yattasolutions.diagrams="http://ns.yatta-solutions.com/umllab/diagrams/1.1.0" xmlns:com.yattasolutions.uml.diagrams.classifier="http://ns.yatta-solutions.com/umllab/diagrams/classifier/1.1.0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmi:id="_gPpQUA8ZEeyxqrp2_sTWng">
+  <eAnnotations xmi:id="_tqi5wA8aEeyxqrp2_sTWng" source="http://ns.yatta.de/umllab">
+    <contents xsi:type="ecore:EAnnotation" xmi:id="_tqi5wQ8aEeyxqrp2_sTWng" source="visual-filters/hideNonPublicElements">
+      <details xmi:id="_tqjg0A8aEeyxqrp2_sTWng" key="isActive" value="false"/>
+    </contents>
+    <contents xsi:type="ecore:EAnnotation" xmi:id="_uU76kA8aEeyxqrp2_sTWng" source="visual-filters/hideStaticFeatures">
+      <details xmi:id="_uU76kQ8aEeyxqrp2_sTWng" key="isActive" value="false"/>
+    </contents>
+  </eAnnotations>
+  <modelElement href="PetriNetwork_One.uml#_hGOTAA8ZEeyxqrp2_sTWng"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_hrm4AA8ZEeyxqrp2_sTWng" sourceAnchor="185.0,0.0" targetAnchor="182.0,80.0" target="_hwYDQA8ZEeyxqrp2_sTWng" source="_hrs-oA8ZEeyxqrp2_sTWng">
+    <modelElement href="PetriNetwork_One.uml#_hU0IoA8ZEeyxqrp2_sTWng"/>
+    <nameVisual xmi:id="_hrnfEA8ZEeyxqrp2_sTWng" text="">
+      <visualProperties xmi:id="_iFAPcA8ZEeyxqrp2_sTWng" position="-11.0,-18.999999999999993"/>
+    </nameVisual>
+    <sourceRole xmi:id="_hroGIA8ZEeyxqrp2_sTWng" aggregationKind="NONE" name="origin" navigable="true">
+      <modelElement href="PetriNetwork_One.uml#_hT90EA8ZEeyxqrp2_sTWng"/>
+      <visualProperties xmi:id="_iE_BUA8ZEeyxqrp2_sTWng" position="-34.0,-79.0"/>
+      <visibility xmi:id="_hroGIQ8ZEeyxqrp2_sTWng" label="+"/>
+      <cardinality xmi:id="_hrotMA8ZEeyxqrp2_sTWng" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_hrotMQ8ZEeyxqrp2_sTWng" aggregationKind="NONE" name="">
+      <modelElement href="PetriNetwork_One.uml#_hU0IoQ8ZEeyxqrp2_sTWng"/>
+      <visualProperties xmi:id="_iFA2gA8ZEeyxqrp2_sTWng" position="-18.0,15.0"/>
+      <visibility xmi:id="_hrotMg8ZEeyxqrp2_sTWng" label="+"/>
+      <cardinality xmi:id="_hrotMw8ZEeyxqrp2_sTWng" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_hrp7UA8ZEeyxqrp2_sTWng" sourceAnchor="155.0,0.0" targetAnchor="152.0,80.0" target="_hwYDQA8ZEeyxqrp2_sTWng" source="_hrs-oA8ZEeyxqrp2_sTWng">
+    <modelElement href="PetriNetwork_One.uml#_hU1WwA8ZEeyxqrp2_sTWng"/>
+    <nameVisual xmi:id="_hrp7UQ8ZEeyxqrp2_sTWng" text="">
+      <visualProperties xmi:id="_iFCrsA8ZEeyxqrp2_sTWng" position="-11.0,-18.999999999999993"/>
+    </nameVisual>
+    <sourceRole xmi:id="_hrp7Ug8ZEeyxqrp2_sTWng" aggregationKind="NONE" name="destination" navigable="true">
+      <modelElement href="PetriNetwork_One.uml#_hT-bIA8ZEeyxqrp2_sTWng"/>
+      <visualProperties xmi:id="_iFBdkA8ZEeyxqrp2_sTWng" position="-48.0,-79.0"/>
+      <visibility xmi:id="_hrp7Uw8ZEeyxqrp2_sTWng" label="+"/>
+      <cardinality xmi:id="_hrp7VA8ZEeyxqrp2_sTWng" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_hrp7VQ8ZEeyxqrp2_sTWng" aggregationKind="NONE" name="">
+      <modelElement href="PetriNetwork_One.uml#_hU1WwQ8ZEeyxqrp2_sTWng"/>
+      <visualProperties xmi:id="_iFDSwA8ZEeyxqrp2_sTWng" position="-18.0,15.0"/>
+      <visibility xmi:id="_hrp7Vg8ZEeyxqrp2_sTWng" label="+"/>
+      <cardinality xmi:id="_hrp7Vw8ZEeyxqrp2_sTWng" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_hrsXkA8ZEeyxqrp2_sTWng" source="_hrs-oA8ZEeyxqrp2_sTWng">
+    <modelElement href="PetriNetwork_One.uml#_hVKt8A8ZEeyxqrp2_sTWng"/>
+    <stereotypes xmi:id="_hrsXkQ8ZEeyxqrp2_sTWng" name="Reference">
+      <modelElement href="PetriNetwork_One.uml#_hVL8EA8ZEeyxqrp2_sTWng"/>
+    </stereotypes>
+    <nameVisual xmi:id="_hrsXkg8ZEeyxqrp2_sTWng" text=""/>
+    <sourceRole xmi:id="_hrsXkw8ZEeyxqrp2_sTWng" aggregationKind="NONE" name="">
+      <modelElement href="PetriNetwork_One.uml#_hVKt8Q8ZEeyxqrp2_sTWng"/>
+      <visibility xmi:id="_hrsXlA8ZEeyxqrp2_sTWng" label="+"/>
+      <cardinality xmi:id="_hrsXlQ8ZEeyxqrp2_sTWng" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_hrsXlg8ZEeyxqrp2_sTWng" aggregationKind="NONE" name="links" navigable="true">
+      <modelElement href="PetriNetwork_One.uml#_hT47kA8ZEeyxqrp2_sTWng"/>
+      <visibility xmi:id="_hrsXlw8ZEeyxqrp2_sTWng" label="+"/>
+      <cardinality xmi:id="_hrsXmA8ZEeyxqrp2_sTWng" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_huB54A8ZEeyxqrp2_sTWng" source="_huTmsA8ZEeyxqrp2_sTWng">
+    <modelElement href="PetriNetwork_One.uml#_hVGcgA8ZEeyxqrp2_sTWng"/>
+    <stereotypes xmi:id="_huMR8A8ZEeyxqrp2_sTWng" name="Reference">
+      <modelElement href="PetriNetwork_One.uml#_hVHqoA8ZEeyxqrp2_sTWng"/>
+    </stereotypes>
+    <nameVisual xmi:id="_huLD0A8ZEeyxqrp2_sTWng" text=""/>
+    <sourceRole xmi:id="_huLq4A8ZEeyxqrp2_sTWng" aggregationKind="NONE" name="">
+      <modelElement href="PetriNetwork_One.uml#_hVGcgQ8ZEeyxqrp2_sTWng"/>
+      <visibility xmi:id="_huPVQQ8ZEeyxqrp2_sTWng" label="+"/>
+      <cardinality xmi:id="_huPVQA8ZEeyxqrp2_sTWng" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_huLq4Q8ZEeyxqrp2_sTWng" aggregationKind="NONE" name="locations" navigable="true">
+      <modelElement href="PetriNetwork_One.uml#_hTsuUA8ZEeyxqrp2_sTWng"/>
+      <visibility xmi:id="_huP8UA8ZEeyxqrp2_sTWng" label="+"/>
+      <cardinality xmi:id="_huPVQg8ZEeyxqrp2_sTWng" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_huCg8A8ZEeyxqrp2_sTWng" source="_huTmsA8ZEeyxqrp2_sTWng">
+    <modelElement href="PetriNetwork_One.uml#_hVIRsA8ZEeyxqrp2_sTWng"/>
+    <stereotypes xmi:id="_huMR9A8ZEeyxqrp2_sTWng" name="Reference">
+      <modelElement href="PetriNetwork_One.uml#_hVI4wA8ZEeyxqrp2_sTWng"/>
+    </stereotypes>
+    <nameVisual xmi:id="_huMR8Q8ZEeyxqrp2_sTWng" text=""/>
+    <sourceRole xmi:id="_huMR8g8ZEeyxqrp2_sTWng" aggregationKind="NONE" name="">
+      <modelElement href="PetriNetwork_One.uml#_hVIRsQ8ZEeyxqrp2_sTWng"/>
+      <visibility xmi:id="_huP8Uw8ZEeyxqrp2_sTWng" label="+"/>
+      <cardinality xmi:id="_huP8Ug8ZEeyxqrp2_sTWng" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_huMR8w8ZEeyxqrp2_sTWng" aggregationKind="NONE" name="transitions" navigable="true">
+      <modelElement href="PetriNetwork_One.uml#_hTt8cA8ZEeyxqrp2_sTWng"/>
+      <visibility xmi:id="_huQjYQ8ZEeyxqrp2_sTWng" label="+"/>
+      <cardinality xmi:id="_huQjYA8ZEeyxqrp2_sTWng" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_huCg8Q8ZEeyxqrp2_sTWng" source="_huTmsA8ZEeyxqrp2_sTWng">
+    <modelElement href="PetriNetwork_One.uml#_hVJf0A8ZEeyxqrp2_sTWng"/>
+    <stereotypes xmi:id="_huM5Aw8ZEeyxqrp2_sTWng" name="Reference">
+      <modelElement href="PetriNetwork_One.uml#_hVKG4A8ZEeyxqrp2_sTWng"/>
+    </stereotypes>
+    <nameVisual xmi:id="_huM5AA8ZEeyxqrp2_sTWng" text=""/>
+    <sourceRole xmi:id="_huM5AQ8ZEeyxqrp2_sTWng" aggregationKind="NONE" name="">
+      <modelElement href="PetriNetwork_One.uml#_hVJf0Q8ZEeyxqrp2_sTWng"/>
+      <visibility xmi:id="_huQjZA8ZEeyxqrp2_sTWng" label="+"/>
+      <cardinality xmi:id="_huQjYw8ZEeyxqrp2_sTWng" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_huM5Ag8ZEeyxqrp2_sTWng" aggregationKind="NONE" name="netLinks" navigable="true">
+      <modelElement href="PetriNetwork_One.uml#_hTw_wA8ZEeyxqrp2_sTWng"/>
+      <visibility xmi:id="_huRKcQ8ZEeyxqrp2_sTWng" label="+"/>
+      <cardinality xmi:id="_huRKcA8ZEeyxqrp2_sTWng" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_hu4OcA8ZEeyxqrp2_sTWng" sourceAnchor="200.0,0.0" targetAnchor="185.0,194.0" superClass="_hrs-oA8ZEeyxqrp2_sTWng" subClass="_hu8f4A8ZEeyxqrp2_sTWng">
+    <modelElement href="PetriNetwork_One.uml#_hRkAUA8ZEeyxqrp2_sTWng"/>
+    <bendpoints xmi:id="_zM3vUg8ZEeyxqrp2_sTWng" sourceY="-28" targetX="170" targetY="27"/>
+    <bendpoints xmi:id="_zM3vUw8ZEeyxqrp2_sTWng" sourceX="-170" sourceY="-28" targetY="27"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_hvU6YA8ZEeyxqrp2_sTWng" targetItem="_hvbBCA8ZEeyxqrp2_sTWng" sourceItem="_hvUTUA8ZEeyxqrp2_sTWng"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_hvVhcQ8ZEeyxqrp2_sTWng" targetItem="_hvbBDg8ZEeyxqrp2_sTWng" sourceItem="_hvVhcA8ZEeyxqrp2_sTWng"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_hvWvkA8ZEeyxqrp2_sTWng" targetItem="_hvbBHA8ZEeyxqrp2_sTWng" sourceItem="_hvWIgA8ZEeyxqrp2_sTWng"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_hvXWoQ8ZEeyxqrp2_sTWng" targetItem="_hvbBIQ8ZEeyxqrp2_sTWng" sourceItem="_hvXWoA8ZEeyxqrp2_sTWng"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_hvX9sQ8ZEeyxqrp2_sTWng" targetItem="_hvbBLw8ZEeyxqrp2_sTWng" sourceItem="_hvX9sA8ZEeyxqrp2_sTWng"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_hvYkwQ8ZEeyxqrp2_sTWng" targetItem="_hvbBNw8ZEeyxqrp2_sTWng" sourceItem="_hvYkwA8ZEeyxqrp2_sTWng"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_hv2e0A8ZEeyxqrp2_sTWng" source="_hv3F4A8ZEeyxqrp2_sTWng">
+    <modelElement href="PetriNetwork_One.uml#_hVL8EQ8ZEeyxqrp2_sTWng"/>
+    <stereotypes xmi:id="_hv2e0Q8ZEeyxqrp2_sTWng" name="Reference">
+      <modelElement href="PetriNetwork_One.uml#_hVNKMA8ZEeyxqrp2_sTWng"/>
+    </stereotypes>
+    <nameVisual xmi:id="_hv2e0g8ZEeyxqrp2_sTWng" text=""/>
+    <sourceRole xmi:id="_hv2e0w8ZEeyxqrp2_sTWng" aggregationKind="NONE" name="">
+      <modelElement href="PetriNetwork_One.uml#_hVL8Eg8ZEeyxqrp2_sTWng"/>
+      <visibility xmi:id="_hv2e1A8ZEeyxqrp2_sTWng" label="+"/>
+      <cardinality xmi:id="_hv2e1Q8ZEeyxqrp2_sTWng" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_hv2e1g8ZEeyxqrp2_sTWng" aggregationKind="NONE" name="scanner" navigable="true">
+      <modelElement href="PetriNetwork_One.uml#_hUA3YA8ZEeyxqrp2_sTWng"/>
+      <visibility xmi:id="_hv2e1w8ZEeyxqrp2_sTWng" label="-"/>
+      <cardinality xmi:id="_hv2e2A8ZEeyxqrp2_sTWng" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_hwOSQA8ZEeyxqrp2_sTWng" sourceAnchor="199.0,0.0" targetAnchor="185.0,194.0" superClass="_hrs-oA8ZEeyxqrp2_sTWng" subClass="_hwRVkA8ZEeyxqrp2_sTWng">
+    <modelElement href="PetriNetwork_One.uml#_hRjZQA8ZEeyxqrp2_sTWng"/>
+    <bendpoints xmi:id="_zM4WYA8ZEeyxqrp2_sTWng" sourceY="-244" targetX="-230" targetY="27"/>
+    <bendpoints xmi:id="_zM49cA8ZEeyxqrp2_sTWng" sourceX="230" sourceY="-244" targetY="27"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_hwtacA8ZEeyxqrp2_sTWng" sourceAnchor="214.0,0.0" targetAnchor="122.0,365.0" target="_huTmsA8ZEeyxqrp2_sTWng" source="_hw95IA8ZEeyxqrp2_sTWng">
+    <modelElement href="PetriNetwork_One.uml#_hVCyIA8ZEeyxqrp2_sTWng"/>
+    <stereotypes xmi:id="_hwvPow8ZEeyxqrp2_sTWng" name="Reference">
+      <modelElement href="PetriNetwork_One.uml#_hVEAQA8ZEeyxqrp2_sTWng"/>
+    </stereotypes>
+    <nameVisual xmi:id="_hwvPoA8ZEeyxqrp2_sTWng" text="">
+      <visualProperties xmi:id="_iFFvAA8ZEeyxqrp2_sTWng" position="-12.0,-19.0"/>
+    </nameVisual>
+    <sourceRole xmi:id="_hwvPoQ8ZEeyxqrp2_sTWng" aggregationKind="NONE" name="">
+      <modelElement href="PetriNetwork_One.uml#_hVCyIQ8ZEeyxqrp2_sTWng"/>
+      <visualProperties xmi:id="_iFD50A8ZEeyxqrp2_sTWng" position="3.0,-70.0"/>
+      <visibility xmi:id="_hw5AoQ8ZEeyxqrp2_sTWng" label="+"/>
+      <cardinality xmi:id="_hw5AoA8ZEeyxqrp2_sTWng" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_hwvPog8ZEeyxqrp2_sTWng" aggregationKind="NONE" name="currentNetwork" navigable="true">
+      <modelElement href="PetriNetwork_One.uml#_hTmnsQ8ZEeyxqrp2_sTWng"/>
+      <visualProperties xmi:id="_iFGWEA8ZEeyxqrp2_sTWng" position="-39.0,-5.0"/>
+      <visibility xmi:id="_hw5nsA8ZEeyxqrp2_sTWng" label="-"/>
+      <cardinality xmi:id="_hw5Aog8ZEeyxqrp2_sTWng" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_hwvPpA8ZEeyxqrp2_sTWng" source="_hw95IA8ZEeyxqrp2_sTWng">
+    <modelElement href="PetriNetwork_One.uml#_hVEnUA8ZEeyxqrp2_sTWng"/>
+    <stereotypes xmi:id="_hw6OwA8ZEeyxqrp2_sTWng" name="Reference">
+      <modelElement href="PetriNetwork_One.uml#_hVF1cA8ZEeyxqrp2_sTWng"/>
+    </stereotypes>
+    <nameVisual xmi:id="_hw5nsg8ZEeyxqrp2_sTWng" text=""/>
+    <sourceRole xmi:id="_hw5nsw8ZEeyxqrp2_sTWng" aggregationKind="NONE" name="">
+      <modelElement href="PetriNetwork_One.uml#_hVEnUQ8ZEeyxqrp2_sTWng"/>
+      <visibility xmi:id="_hw8D8Q8ZEeyxqrp2_sTWng" label="+"/>
+      <cardinality xmi:id="_hw8D8A8ZEeyxqrp2_sTWng" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_hw5ntA8ZEeyxqrp2_sTWng" aggregationKind="NONE" name="networks" navigable="true">
+      <modelElement href="PetriNetwork_One.uml#_hToc4A8ZEeyxqrp2_sTWng"/>
+      <visibility xmi:id="_hw8D8w8ZEeyxqrp2_sTWng" label="-"/>
+      <cardinality xmi:id="_hw8D8g8ZEeyxqrp2_sTWng" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_hwv2sQ8ZEeyxqrp2_sTWng" targetItem="_hw95bg8ZEeyxqrp2_sTWng" sourceItem="_hwv2sA8ZEeyxqrp2_sTWng"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_hwwdwQ8ZEeyxqrp2_sTWng" targetItem="_hw95dA8ZEeyxqrp2_sTWng" sourceItem="_hwwdwA8ZEeyxqrp2_sTWng"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_hwxE0Q8ZEeyxqrp2_sTWng" targetItem="_hw95dw8ZEeyxqrp2_sTWng" sourceItem="_hwxE0A8ZEeyxqrp2_sTWng"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_hwxE0w8ZEeyxqrp2_sTWng" targetItem="_hw95eg8ZEeyxqrp2_sTWng" sourceItem="_hwxE0g8ZEeyxqrp2_sTWng"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_hwxr4Q8ZEeyxqrp2_sTWng" targetItem="_hw95fQ8ZEeyxqrp2_sTWng" sourceItem="_hwxr4A8ZEeyxqrp2_sTWng"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_hwxr4w8ZEeyxqrp2_sTWng" targetItem="_hw95gA8ZEeyxqrp2_sTWng" sourceItem="_hwxr4g8ZEeyxqrp2_sTWng"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_hwyS8Q8ZEeyxqrp2_sTWng" targetItem="_hw95gw8ZEeyxqrp2_sTWng" sourceItem="_hwyS8A8ZEeyxqrp2_sTWng"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_hwyS8w8ZEeyxqrp2_sTWng" targetItem="_hw95hg8ZEeyxqrp2_sTWng" sourceItem="_hwyS8g8ZEeyxqrp2_sTWng"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_hwy6AQ8ZEeyxqrp2_sTWng" targetItem="_hw95iQ8ZEeyxqrp2_sTWng" sourceItem="_hwy6AA8ZEeyxqrp2_sTWng"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_hwzhEQ8ZEeyxqrp2_sTWng" targetItem="_hw95kQ8ZEeyxqrp2_sTWng" sourceItem="_hwzhEA8ZEeyxqrp2_sTWng"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_hw0IIQ8ZEeyxqrp2_sTWng" targetItem="_hw95lg8ZEeyxqrp2_sTWng" sourceItem="_hw0IIA8ZEeyxqrp2_sTWng"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_hw0vMQ8ZEeyxqrp2_sTWng" targetItem="_hw95nw8ZEeyxqrp2_sTWng" sourceItem="_hw0vMA8ZEeyxqrp2_sTWng"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_hw1WQQ8ZEeyxqrp2_sTWng" targetItem="_hw95qg8ZEeyxqrp2_sTWng" sourceItem="_hw1WQA8ZEeyxqrp2_sTWng"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_hxdoYA8ZEeyxqrp2_sTWng" sourceAnchor="122.0,0.0" targetAnchor="62.0,71.0" dashed="true" superClass="_hxh50A8ZEeyxqrp2_sTWng" subClass="_huTmsA8ZEeyxqrp2_sTWng">
+    <modelElement href="PetriNetwork_One.uml#_hSEWoA8ZEeyxqrp2_sTWng"/>
+    <bendpoints xmi:id="_zM3vUA8ZEeyxqrp2_sTWng" sourceY="-27" targetX="-336" targetY="28"/>
+    <bendpoints xmi:id="_zM3vUQ8ZEeyxqrp2_sTWng" sourceX="336" sourceY="-27" targetY="28"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_hxdoYQ8ZEeyxqrp2_sTWng" sourceAnchor="0.0,86.0" targetAnchor="62.0,71.0" dashed="true" superClass="_hxh50A8ZEeyxqrp2_sTWng" subClass="_hrs-oA8ZEeyxqrp2_sTWng">
+    <modelElement href="PetriNetwork_One.uml#_hSP80A8ZEeyxqrp2_sTWng"/>
+    <bendpoints xmi:id="_zM2hMA8ZEeyxqrp2_sTWng" sourceX="-45" targetX="106" targetY="405"/>
+    <bendpoints xmi:id="_zM3IQA8ZEeyxqrp2_sTWng" sourceX="-45" sourceY="-377" targetX="106" targetY="28"/>
+    <bendpoints xmi:id="_zM3IQQ8ZEeyxqrp2_sTWng" sourceX="-151" sourceY="-377" targetY="28"/>
+  </edges>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_hvUTUA8ZEeyxqrp2_sTWng" sourceConnectionVisual="_hvU6YA8ZEeyxqrp2_sTWng" text="legge da file tutte le righe in cui sono state le network&#xD;&#xA;&#x9; * @return&#x9;le righe del file data.txt&#xD;&#xA;&#x9; * @throws FileNotFoundException" item="_hvbBCA8ZEeyxqrp2_sTWng">
+    <modelElement href="PetriNetwork_One.uml#_hUxsYA8ZEeyxqrp2_sTWng"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_hvVhcA8ZEeyxqrp2_sTWng" sourceConnectionVisual="_hvVhcQ8ZEeyxqrp2_sTWng" text="ritorna tutti gli id delle network salvate&#xD;&#xA;&#x9; * @return id delle network" item="_hvbBDg8ZEeyxqrp2_sTWng">
+    <modelElement href="PetriNetwork_One.uml#_hUxsYQ8ZEeyxqrp2_sTWng"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_hvWIgA8ZEeyxqrp2_sTWng" sourceConnectionVisual="_hvWvkA8ZEeyxqrp2_sTWng" text="ritorna la lista dei nomi delle network salvate utile per fare delle scelte &#xD;&#xA;&#x9; * @return lista nomi network" item="_hvbBHA8ZEeyxqrp2_sTWng">
+    <modelElement href="PetriNetwork_One.uml#_hUyTcA8ZEeyxqrp2_sTWng"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_hvXWoA8ZEeyxqrp2_sTWng" sourceConnectionVisual="_hvXWoQ8ZEeyxqrp2_sTWng" text="metodo per ottenere i nomi delle reti salvate&#xD;&#xA;&#x9; * @return un arraylist di stringhe con tutti i nomi delle nostre network salvate&#xD;&#xA;&#x9; * @throws FileNotFoundException" item="_hvbBIQ8ZEeyxqrp2_sTWng">
+    <modelElement href="PetriNetwork_One.uml#_hUyTcQ8ZEeyxqrp2_sTWng"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_hvX9sA8ZEeyxqrp2_sTWng" sourceConnectionVisual="_hvX9sQ8ZEeyxqrp2_sTWng" text="metodo per caricare una network con un dato id&#xD;&#xA;&#x9; * @param netID della rete da caricare &#xD;&#xA;&#x9; * @return la network con l'id specificato" item="_hvbBLw8ZEeyxqrp2_sTWng">
+    <modelElement href="PetriNetwork_One.uml#_hUyTcg8ZEeyxqrp2_sTWng"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_hvYkwA8ZEeyxqrp2_sTWng" sourceConnectionVisual="_hvYkwQ8ZEeyxqrp2_sTWng" text="converte una stringa json in una network&#xD;&#xA;&#x9; * @param s&#xD;&#xA;&#x9; * @return network" item="_hvbBNw8ZEeyxqrp2_sTWng">
+    <modelElement href="PetriNetwork_One.uml#_hUyTcw8ZEeyxqrp2_sTWng"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_hwv2sA8ZEeyxqrp2_sTWng" sourceConnectionVisual="_hwv2sQ8ZEeyxqrp2_sTWng" text="Costruisce un menù inizializzando l'array di reti e creando, se non esiste ancora, il file su cui verranno&#xD;&#xA;&#x9; * salvate" item="_hw95bg8ZEeyxqrp2_sTWng">
+    <modelElement href="PetriNetwork_One.uml#_hUupEA8ZEeyxqrp2_sTWng"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_hwwdwA8ZEeyxqrp2_sTWng" sourceConnectionVisual="_hwwdwQ8ZEeyxqrp2_sTWng" text="*metodo principale di avvio del menù, switch che richiama tutte le funzionalità, 0 per uscire" item="_hw95dA8ZEeyxqrp2_sTWng">
+    <modelElement href="PetriNetwork_One.uml#_hUvQIA8ZEeyxqrp2_sTWng"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_hwxE0A8ZEeyxqrp2_sTWng" sourceConnectionVisual="_hwxE0Q8ZEeyxqrp2_sTWng" text="Metodo di gestione della creazione di reti:&#xD;&#xA;&#x9; * Crea una Network chiedendo all'utente un nome e imponendo la creazione di un posto, una transition&#xD;&#xA;&#x9; * e un link iniziale. Permette la creazione guidata di nuovi nodi e link garantendo correttezza sintattica&#xD;&#xA;&#x9; * Garantisce unicità previa check sul nome della rete." item="_hw95dw8ZEeyxqrp2_sTWng">
+    <modelElement href="PetriNetwork_One.uml#_hUvQIQ8ZEeyxqrp2_sTWng"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_hwxE0g8ZEeyxqrp2_sTWng" sourceConnectionVisual="_hwxE0w8ZEeyxqrp2_sTWng" text="Metodo dedicato al salvataggio delle reti su file, permette di salvare una rete unica o tutte quelle create." item="_hw95eg8ZEeyxqrp2_sTWng">
+    <modelElement href="PetriNetwork_One.uml#_hUv3MA8ZEeyxqrp2_sTWng"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_hwxr4A8ZEeyxqrp2_sTWng" sourceConnectionVisual="_hwxr4Q8ZEeyxqrp2_sTWng" text="Stampa a video elenco di posti, transizioni, link e reti complessive" item="_hw95fQ8ZEeyxqrp2_sTWng">
+    <modelElement href="PetriNetwork_One.uml#_hUv3MQ8ZEeyxqrp2_sTWng"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_hwxr4g8ZEeyxqrp2_sTWng" sourceConnectionVisual="_hwxr4w8ZEeyxqrp2_sTWng" text="Crea una base per la rete imponendo la creazione di un posto, una transizione e creando un link tra esse" item="_hw95gA8ZEeyxqrp2_sTWng">
+    <modelElement href="PetriNetwork_One.uml#_hUv3Mg8ZEeyxqrp2_sTWng"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_hwyS8A8ZEeyxqrp2_sTWng" sourceConnectionVisual="_hwyS8Q8ZEeyxqrp2_sTWng" text="Medoto che crea un nuovo posto nella rete con l'inserimento di un &quot;nome&quot; univoco" item="_hw95gw8ZEeyxqrp2_sTWng">
+    <modelElement href="PetriNetwork_One.uml#_hUv3Mw8ZEeyxqrp2_sTWng"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_hwyS8g8ZEeyxqrp2_sTWng" sourceConnectionVisual="_hwyS8w8ZEeyxqrp2_sTWng" text="Medoto che crea una nuova transizione nella rete con l'inserimento di un &quot;nome&quot; univoco" item="_hw95hg8ZEeyxqrp2_sTWng">
+    <modelElement href="PetriNetwork_One.uml#_hUv3NA8ZEeyxqrp2_sTWng"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_hwy6AA8ZEeyxqrp2_sTWng" sourceConnectionVisual="_hwy6AQ8ZEeyxqrp2_sTWng" text="Check sull'univocità del nome di una rete&#xD;&#xA;&#x9; * @param name&#xD;&#xA;&#x9; * @return yes se esiste già una rete con quel nome su file o in locale" item="_hw95iQ8ZEeyxqrp2_sTWng">
+    <modelElement href="PetriNetwork_One.uml#_hUweQg8ZEeyxqrp2_sTWng"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_hwzhEA8ZEeyxqrp2_sTWng" sourceConnectionVisual="_hwzhEQ8ZEeyxqrp2_sTWng" text="Ritorna uno StringBuffer con la lista di tutte le network create dall'avvio del programma&#xD;&#xA;&#x9; * @return StringBuffer formattato: 0)prima rete 1)seconda rete 2)terza rete etc." item="_hw95kQ8ZEeyxqrp2_sTWng">
+    <modelElement href="PetriNetwork_One.uml#_hUweQw8ZEeyxqrp2_sTWng"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_hw0IIA8ZEeyxqrp2_sTWng" sourceConnectionVisual="_hw0IIQ8ZEeyxqrp2_sTWng" text="Aggiunge un link alla rete corrente &#xD;&#xA;&#x9; * @param t un oggetto transizione&#xD;&#xA;&#x9; * @param l un oggetto location" item="_hw95lg8ZEeyxqrp2_sTWng">
+    <modelElement href="PetriNetwork_One.uml#_hUweQA8ZEeyxqrp2_sTWng"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_hw0vMA8ZEeyxqrp2_sTWng" sourceConnectionVisual="_hw0vMQ8ZEeyxqrp2_sTWng" text="Metodo check sull'esistenza di un link&#xD;&#xA;&#x9; * @param t transition&#xD;&#xA;&#x9; * @param l location&#xD;&#xA;&#x9; * @return boolean" item="_hw95nw8ZEeyxqrp2_sTWng">
+    <modelElement href="PetriNetwork_One.uml#_hUweQQ8ZEeyxqrp2_sTWng"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_hw1WQA8ZEeyxqrp2_sTWng" sourceConnectionVisual="_hw1WQQ8ZEeyxqrp2_sTWng" text="Metodo che richiama dalla classe statica WriteN il salvataggio su file delle reti create" item="_hw95qg8ZEeyxqrp2_sTWng">
+    <modelElement href="PetriNetwork_One.uml#_hUxFUA8ZEeyxqrp2_sTWng"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_hrs-oA8ZEeyxqrp2_sTWng" name="Node" associationsOut="_hrm4AA8ZEeyxqrp2_sTWng _hrp7UA8ZEeyxqrp2_sTWng _hrsXkA8ZEeyxqrp2_sTWng" generalizations="_hxdoYQ8ZEeyxqrp2_sTWng" subclassedBy="_hu4OcA8ZEeyxqrp2_sTWng _hwOSQA8ZEeyxqrp2_sTWng">
+    <modelElement href="PetriNetwork_One.uml#_hJTcMA8ZEeyxqrp2_sTWng"/>
+    <visualProperties xmi:id="_hrs-oQ8ZEeyxqrp2_sTWng" position="30.0,30.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_hrs-og8ZEeyxqrp2_sTWng" label="+"/>
+    <attributes xmi:id="_hrs-ow8ZEeyxqrp2_sTWng" name="netId">
+      <modelElement href="PetriNetwork_One.uml#_hT3GYA8ZEeyxqrp2_sTWng"/>
+      <visibility xmi:id="_hrs-pA8ZEeyxqrp2_sTWng" label="+"/>
+      <cardinality xmi:id="_hrs-pQ8ZEeyxqrp2_sTWng" label="1" max="1" min="1"/>
+      <type xmi:id="_hrs-pg8ZEeyxqrp2_sTWng" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_hrs-pw8ZEeyxqrp2_sTWng" name="nodeId">
+      <modelElement href="PetriNetwork_One.uml#_hT3tcA8ZEeyxqrp2_sTWng"/>
+      <visibility xmi:id="_hrs-qA8ZEeyxqrp2_sTWng" label="+"/>
+      <cardinality xmi:id="_hrs-qQ8ZEeyxqrp2_sTWng" label="1" max="1" min="1"/>
+      <type xmi:id="_hrs-qg8ZEeyxqrp2_sTWng" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_hrs-qw8ZEeyxqrp2_sTWng" name="nodeName">
+      <modelElement href="PetriNetwork_One.uml#_hT4UgA8ZEeyxqrp2_sTWng"/>
+      <visualProperties xmi:id="_tqmkIA8aEeyxqrp2_sTWng"/>
+      <stereotypes xmi:id="_hrs-rA8ZEeyxqrp2_sTWng" name="LegacyStyledElement">
+        <modelElement href="PetriNetwork_One.uml#_hT4UgQ8ZEeyxqrp2_sTWng"/>
+      </stereotypes>
+      <visibility xmi:id="_hrs-rQ8ZEeyxqrp2_sTWng" label="-"/>
+      <cardinality xmi:id="_hrs-rg8ZEeyxqrp2_sTWng" label="1" max="1" min="1"/>
+      <type xmi:id="_hrtlsA8ZEeyxqrp2_sTWng" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_hrtlsQ8ZEeyxqrp2_sTWng" name="links">
+      <modelElement href="PetriNetwork_One.uml#_hT47kA8ZEeyxqrp2_sTWng"/>
+      <stereotypes xmi:id="_hrtlsg8ZEeyxqrp2_sTWng" name="Generics">
+        <modelElement href="PetriNetwork_One.uml#_hT6wwA8ZEeyxqrp2_sTWng"/>
+      </stereotypes>
+      <visibility xmi:id="_hrtlsw8ZEeyxqrp2_sTWng" label="+"/>
+      <cardinality xmi:id="_hrtltA8ZEeyxqrp2_sTWng" label="1" max="1" min="1"/>
+      <type xmi:id="_hrtltQ8ZEeyxqrp2_sTWng" name="ArrayList">
+        <modelElement href="PetriNetwork_One.uml#_hRrVEA8ZEeyxqrp2_sTWng"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_hrtltg8ZEeyxqrp2_sTWng" name="Node">
+      <modelElement href="PetriNetwork_One.uml#_hJWfgA8ZEeyxqrp2_sTWng"/>
+      <keywords xmi:id="_hrtltw8ZEeyxqrp2_sTWng" keyword="create"/>
+      <visibility xmi:id="_hruMwA8ZEeyxqrp2_sTWng" label="+"/>
+      <cardinality xmi:id="_hruMwQ8ZEeyxqrp2_sTWng" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_hruMwg8ZEeyxqrp2_sTWng">
+        <modelElement href="PetriNetwork_One.uml#_hJYUsQ8ZEeyxqrp2_sTWng"/>
+        <type xmi:id="_hruMww8ZEeyxqrp2_sTWng" name="Node">
+          <modelElement href="PetriNetwork_One.uml#_hJTcMA8ZEeyxqrp2_sTWng"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_hruMxA8ZEeyxqrp2_sTWng" name="netId">
+        <modelElement href="PetriNetwork_One.uml#_hJXGkA8ZEeyxqrp2_sTWng"/>
+        <cardinality xmi:id="_hruMxQ8ZEeyxqrp2_sTWng" label="1" max="1" min="1"/>
+        <type xmi:id="_hruMxg8ZEeyxqrp2_sTWng" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_hruMxw8ZEeyxqrp2_sTWng" name="nodeId">
+        <modelElement href="PetriNetwork_One.uml#_hJXGkQ8ZEeyxqrp2_sTWng"/>
+        <cardinality xmi:id="_hruMyA8ZEeyxqrp2_sTWng" label="1" max="1" min="1"/>
+        <type xmi:id="_hruMyQ8ZEeyxqrp2_sTWng" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_hruMyg8ZEeyxqrp2_sTWng" name="nodeName">
+        <modelElement href="PetriNetwork_One.uml#_hJXtoA8ZEeyxqrp2_sTWng"/>
+        <cardinality xmi:id="_hruMyw8ZEeyxqrp2_sTWng" label="1" max="1" min="1"/>
+        <type xmi:id="_hruMzA8ZEeyxqrp2_sTWng" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_hruMzQ8ZEeyxqrp2_sTWng" name="setNodeName">
+      <modelElement href="PetriNetwork_One.uml#_hJZi0A8ZEeyxqrp2_sTWng"/>
+      <visibility xmi:id="_hruMzg8ZEeyxqrp2_sTWng" label="+"/>
+      <cardinality xmi:id="_hruMzw8ZEeyxqrp2_sTWng" label="1" max="1" min="1"/>
+      <parameters xmi:id="_hruM0A8ZEeyxqrp2_sTWng" name="nodeName">
+        <modelElement href="PetriNetwork_One.uml#_hJaJ4A8ZEeyxqrp2_sTWng"/>
+        <cardinality xmi:id="_hruM0Q8ZEeyxqrp2_sTWng" label="1" max="1" min="1"/>
+        <type xmi:id="_hruM0g8ZEeyxqrp2_sTWng" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_hruM0w8ZEeyxqrp2_sTWng" name="getName">
+      <modelElement href="PetriNetwork_One.uml#_hJaw8A8ZEeyxqrp2_sTWng"/>
+      <stereotypes xmi:id="_hruM1A8ZEeyxqrp2_sTWng" name="LegacyStyledElement">
+        <modelElement href="PetriNetwork_One.uml#_hJb_EA8ZEeyxqrp2_sTWng"/>
+      </stereotypes>
+      <stereotypes xmi:id="_hruM1Q8ZEeyxqrp2_sTWng" name="Annotations">
+        <modelElement href="PetriNetwork_One.uml#_hJd0QA8ZEeyxqrp2_sTWng"/>
+      </stereotypes>
+      <visibility xmi:id="_hruM1g8ZEeyxqrp2_sTWng" label="+"/>
+      <cardinality xmi:id="_hruM1w8ZEeyxqrp2_sTWng" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_hruM2A8ZEeyxqrp2_sTWng">
+        <modelElement href="PetriNetwork_One.uml#_hJbYAA8ZEeyxqrp2_sTWng"/>
+        <type xmi:id="_hruM2Q8ZEeyxqrp2_sTWng" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_hruM2g8ZEeyxqrp2_sTWng" name="addLink">
+      <modelElement href="PetriNetwork_One.uml#_hSRK8A8ZEeyxqrp2_sTWng"/>
+      <visibility xmi:id="_hruM2w8ZEeyxqrp2_sTWng" label="+"/>
+      <cardinality xmi:id="_hruM3A8ZEeyxqrp2_sTWng" label="1" max="1" min="1"/>
+      <parameters xmi:id="_hruM3Q8ZEeyxqrp2_sTWng" name="link">
+        <modelElement href="PetriNetwork_One.uml#_hSRK8Q8ZEeyxqrp2_sTWng"/>
+        <cardinality xmi:id="_hruM3g8ZEeyxqrp2_sTWng" label="1" max="1" min="1"/>
+        <type xmi:id="_hruM3w8ZEeyxqrp2_sTWng" name="Link">
+          <modelElement href="PetriNetwork_One.uml#_hJ7HQA8ZEeyxqrp2_sTWng"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_huTmsA8ZEeyxqrp2_sTWng" name="Network" associationsIn="_hwtacA8ZEeyxqrp2_sTWng" associationsOut="_huB54A8ZEeyxqrp2_sTWng _huCg8A8ZEeyxqrp2_sTWng _huCg8Q8ZEeyxqrp2_sTWng" generalizations="_hxdoYA8ZEeyxqrp2_sTWng">
+    <modelElement href="PetriNetwork_One.uml#_hItmUA8ZEeyxqrp2_sTWng"/>
+    <visualProperties xmi:id="_huTmsQ8ZEeyxqrp2_sTWng" position="-579.0,-234.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_huTmsg8ZEeyxqrp2_sTWng" label="+"/>
+    <attributes xmi:id="_huTmsw8ZEeyxqrp2_sTWng" name="locations">
+      <modelElement href="PetriNetwork_One.uml#_hTsuUA8ZEeyxqrp2_sTWng"/>
+      <stereotypes xmi:id="_huTmtA8ZEeyxqrp2_sTWng" name="Generics">
+        <modelElement href="PetriNetwork_One.uml#_hTtVYA8ZEeyxqrp2_sTWng"/>
+      </stereotypes>
+      <visibility xmi:id="_huTmtQ8ZEeyxqrp2_sTWng" label="+"/>
+      <cardinality xmi:id="_huTmtg8ZEeyxqrp2_sTWng" label="1" max="1" min="1"/>
+      <type xmi:id="_huTmtw8ZEeyxqrp2_sTWng" name="ArrayList">
+        <modelElement href="PetriNetwork_One.uml#_hRrVEA8ZEeyxqrp2_sTWng"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_huTmuA8ZEeyxqrp2_sTWng" name="transitions">
+      <modelElement href="PetriNetwork_One.uml#_hTt8cA8ZEeyxqrp2_sTWng"/>
+      <stereotypes xmi:id="_huTmuQ8ZEeyxqrp2_sTWng" name="Generics">
+        <modelElement href="PetriNetwork_One.uml#_hTwYsA8ZEeyxqrp2_sTWng"/>
+      </stereotypes>
+      <visibility xmi:id="_huTmug8ZEeyxqrp2_sTWng" label="+"/>
+      <cardinality xmi:id="_huTmuw8ZEeyxqrp2_sTWng" label="1" max="1" min="1"/>
+      <type xmi:id="_huTmvA8ZEeyxqrp2_sTWng" name="ArrayList">
+        <modelElement href="PetriNetwork_One.uml#_hRrVEA8ZEeyxqrp2_sTWng"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_huTmvQ8ZEeyxqrp2_sTWng" name="netLinks">
+      <modelElement href="PetriNetwork_One.uml#_hTw_wA8ZEeyxqrp2_sTWng"/>
+      <stereotypes xmi:id="_huTmvg8ZEeyxqrp2_sTWng" name="Generics">
+        <modelElement href="PetriNetwork_One.uml#_hTzcAA8ZEeyxqrp2_sTWng"/>
+      </stereotypes>
+      <visibility xmi:id="_huTmvw8ZEeyxqrp2_sTWng" label="+"/>
+      <cardinality xmi:id="_huTmwA8ZEeyxqrp2_sTWng" label="1" max="1" min="1"/>
+      <type xmi:id="_huTmwQ8ZEeyxqrp2_sTWng" name="ArrayList">
+        <modelElement href="PetriNetwork_One.uml#_hRrVEA8ZEeyxqrp2_sTWng"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_huTmwg8ZEeyxqrp2_sTWng" name="netId">
+      <modelElement href="PetriNetwork_One.uml#_hT0DEA8ZEeyxqrp2_sTWng"/>
+      <visibility xmi:id="_huTmww8ZEeyxqrp2_sTWng" label="+"/>
+      <cardinality xmi:id="_huTmxA8ZEeyxqrp2_sTWng" label="1" max="1" min="1"/>
+      <type xmi:id="_huTmxQ8ZEeyxqrp2_sTWng" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_huTmxg8ZEeyxqrp2_sTWng" name="name">
+      <modelElement href="PetriNetwork_One.uml#_hT0qIA8ZEeyxqrp2_sTWng"/>
+      <visibility xmi:id="_huTmxw8ZEeyxqrp2_sTWng" label="+"/>
+      <cardinality xmi:id="_huTmyA8ZEeyxqrp2_sTWng" label="1" max="1" min="1"/>
+      <type xmi:id="_huTmyQ8ZEeyxqrp2_sTWng" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_huTmyg8ZEeyxqrp2_sTWng" defaultValue="0" name="network_id" staticAttribute="true">
+      <modelElement href="PetriNetwork_One.uml#_hT1RMA8ZEeyxqrp2_sTWng"/>
+      <visualProperties xmi:id="_tqnLMA8aEeyxqrp2_sTWng"/>
+      <stereotypes xmi:id="_huTmyw8ZEeyxqrp2_sTWng" name="LegacyStyledElement">
+        <modelElement href="PetriNetwork_One.uml#_hT14QA8ZEeyxqrp2_sTWng"/>
+      </stereotypes>
+      <visibility xmi:id="_huTmzA8ZEeyxqrp2_sTWng" label="~"/>
+      <cardinality xmi:id="_huTmzQ8ZEeyxqrp2_sTWng" label="1" max="1" min="1"/>
+      <type xmi:id="_huTmzg8ZEeyxqrp2_sTWng" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_huTmzw8ZEeyxqrp2_sTWng" name="Network">
+      <modelElement href="PetriNetwork_One.uml#_hIzs8A8ZEeyxqrp2_sTWng"/>
+      <keywords xmi:id="_huUNwA8ZEeyxqrp2_sTWng" keyword="create"/>
+      <visibility xmi:id="_huUNwQ8ZEeyxqrp2_sTWng" label="+"/>
+      <cardinality xmi:id="_huUNwg8ZEeyxqrp2_sTWng" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_huUNww8ZEeyxqrp2_sTWng">
+        <modelElement href="PetriNetwork_One.uml#_hI0UAg8ZEeyxqrp2_sTWng"/>
+        <type xmi:id="_huUNxA8ZEeyxqrp2_sTWng" name="Network">
+          <modelElement href="PetriNetwork_One.uml#_hItmUA8ZEeyxqrp2_sTWng"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_huUNxQ8ZEeyxqrp2_sTWng" name="name">
+        <modelElement href="PetriNetwork_One.uml#_hIzs8Q8ZEeyxqrp2_sTWng"/>
+        <cardinality xmi:id="_huUNxg8ZEeyxqrp2_sTWng" label="1" max="1" min="1"/>
+        <type xmi:id="_huUNxw8ZEeyxqrp2_sTWng" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_huUNyA8ZEeyxqrp2_sTWng" name="addLocation">
+      <modelElement href="PetriNetwork_One.uml#_hI1iIA8ZEeyxqrp2_sTWng"/>
+      <visibility xmi:id="_huUNyQ8ZEeyxqrp2_sTWng" label="+"/>
+      <cardinality xmi:id="_huUNyg8ZEeyxqrp2_sTWng" label="1" max="1" min="1"/>
+      <parameters xmi:id="_huUNyw8ZEeyxqrp2_sTWng" name="name">
+        <modelElement href="PetriNetwork_One.uml#_hI2JMA8ZEeyxqrp2_sTWng"/>
+        <cardinality xmi:id="_huUNzA8ZEeyxqrp2_sTWng" label="1" max="1" min="1"/>
+        <type xmi:id="_huUNzQ8ZEeyxqrp2_sTWng" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_huUNzg8ZEeyxqrp2_sTWng" name="addTransition">
+      <modelElement href="PetriNetwork_One.uml#_hI3XUA8ZEeyxqrp2_sTWng"/>
+      <visibility xmi:id="_huUNzw8ZEeyxqrp2_sTWng" label="+"/>
+      <cardinality xmi:id="_huUN0A8ZEeyxqrp2_sTWng" label="1" max="1" min="1"/>
+      <parameters xmi:id="_huUN0Q8ZEeyxqrp2_sTWng" name="name">
+        <modelElement href="PetriNetwork_One.uml#_hI3XUQ8ZEeyxqrp2_sTWng"/>
+        <cardinality xmi:id="_huUN0g8ZEeyxqrp2_sTWng" label="1" max="1" min="1"/>
+        <type xmi:id="_huUN0w8ZEeyxqrp2_sTWng" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_huUN1A8ZEeyxqrp2_sTWng" name="getLocation">
+      <modelElement href="PetriNetwork_One.uml#_hI5MgA8ZEeyxqrp2_sTWng"/>
+      <visibility xmi:id="_huUN1Q8ZEeyxqrp2_sTWng" label="+"/>
+      <cardinality xmi:id="_huUN1g8ZEeyxqrp2_sTWng" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_huUN1w8ZEeyxqrp2_sTWng">
+        <modelElement href="PetriNetwork_One.uml#_hSIoEA8ZEeyxqrp2_sTWng"/>
+        <type xmi:id="_huUN2A8ZEeyxqrp2_sTWng" name="Location">
+          <modelElement href="PetriNetwork_One.uml#_hH8xUA8ZEeyxqrp2_sTWng"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_huUN2Q8ZEeyxqrp2_sTWng" name="i">
+        <modelElement href="PetriNetwork_One.uml#_hI5zkA8ZEeyxqrp2_sTWng"/>
+        <cardinality xmi:id="_huUN2g8ZEeyxqrp2_sTWng" label="1" max="1" min="1"/>
+        <type xmi:id="_huUN2w8ZEeyxqrp2_sTWng" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_huUN3A8ZEeyxqrp2_sTWng" name="getTransition">
+      <modelElement href="PetriNetwork_One.uml#_hI7owA8ZEeyxqrp2_sTWng"/>
+      <visibility xmi:id="_huUN3Q8ZEeyxqrp2_sTWng" label="+"/>
+      <cardinality xmi:id="_huUN3g8ZEeyxqrp2_sTWng" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_huUN3w8ZEeyxqrp2_sTWng">
+        <modelElement href="PetriNetwork_One.uml#_hSIoEQ8ZEeyxqrp2_sTWng"/>
+        <type xmi:id="_huUN4A8ZEeyxqrp2_sTWng" name="Transition">
+          <modelElement href="PetriNetwork_One.uml#_hHwkEA8ZEeyxqrp2_sTWng"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_huUN4Q8ZEeyxqrp2_sTWng" name="i">
+        <modelElement href="PetriNetwork_One.uml#_hI7owQ8ZEeyxqrp2_sTWng"/>
+        <cardinality xmi:id="_huUN4g8ZEeyxqrp2_sTWng" label="1" max="1" min="1"/>
+        <type xmi:id="_huUN4w8ZEeyxqrp2_sTWng" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_huUN5A8ZEeyxqrp2_sTWng" name="getTransitionsList">
+      <modelElement href="PetriNetwork_One.uml#_hI9d8A8ZEeyxqrp2_sTWng"/>
+      <visibility xmi:id="_huUN5Q8ZEeyxqrp2_sTWng" label="+"/>
+      <cardinality xmi:id="_huUN5g8ZEeyxqrp2_sTWng" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_huUN5w8ZEeyxqrp2_sTWng">
+        <modelElement href="PetriNetwork_One.uml#_hS7SQA8ZEeyxqrp2_sTWng"/>
+        <type xmi:id="_huUN6A8ZEeyxqrp2_sTWng" name="StringBuffer">
+          <modelElement href="PetriNetwork_One.uml#_hS0kkQ8ZEeyxqrp2_sTWng"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_huUN6Q8ZEeyxqrp2_sTWng" name="getLocationsList">
+      <modelElement href="PetriNetwork_One.uml#_hI_TIA8ZEeyxqrp2_sTWng"/>
+      <visibility xmi:id="_huUN6g8ZEeyxqrp2_sTWng" label="+"/>
+      <cardinality xmi:id="_huUN6w8ZEeyxqrp2_sTWng" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_huUN7A8ZEeyxqrp2_sTWng">
+        <modelElement href="PetriNetwork_One.uml#_hS75UA8ZEeyxqrp2_sTWng"/>
+        <type xmi:id="_huUN7Q8ZEeyxqrp2_sTWng" name="StringBuffer">
+          <modelElement href="PetriNetwork_One.uml#_hS0kkQ8ZEeyxqrp2_sTWng"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_huUN7g8ZEeyxqrp2_sTWng" name="getLinksList">
+      <modelElement href="PetriNetwork_One.uml#_hJAhQA8ZEeyxqrp2_sTWng"/>
+      <visibility xmi:id="_huUN7w8ZEeyxqrp2_sTWng" label="+"/>
+      <cardinality xmi:id="_huUN8A8ZEeyxqrp2_sTWng" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_huUN8Q8ZEeyxqrp2_sTWng">
+        <modelElement href="PetriNetwork_One.uml#_hS9HcA8ZEeyxqrp2_sTWng"/>
+        <type xmi:id="_huUN8g8ZEeyxqrp2_sTWng" name="StringBuffer">
+          <modelElement href="PetriNetwork_One.uml#_hS0kkQ8ZEeyxqrp2_sTWng"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_huUN8w8ZEeyxqrp2_sTWng" name="getLastTransition">
+      <modelElement href="PetriNetwork_One.uml#_hJBvYA8ZEeyxqrp2_sTWng"/>
+      <visibility xmi:id="_huUN9A8ZEeyxqrp2_sTWng" label="+"/>
+      <cardinality xmi:id="_huUN9Q8ZEeyxqrp2_sTWng" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_huUN9g8ZEeyxqrp2_sTWng">
+        <modelElement href="PetriNetwork_One.uml#_hSJ2MA8ZEeyxqrp2_sTWng"/>
+        <type xmi:id="_huUN9w8ZEeyxqrp2_sTWng" name="Transition">
+          <modelElement href="PetriNetwork_One.uml#_hHwkEA8ZEeyxqrp2_sTWng"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_huUN-A8ZEeyxqrp2_sTWng" name="getLastLocation">
+      <modelElement href="PetriNetwork_One.uml#_hJDkkA8ZEeyxqrp2_sTWng"/>
+      <visibility xmi:id="_huUN-Q8ZEeyxqrp2_sTWng" label="+"/>
+      <cardinality xmi:id="_huUN-g8ZEeyxqrp2_sTWng" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_huUN-w8ZEeyxqrp2_sTWng">
+        <modelElement href="PetriNetwork_One.uml#_hSJ2MQ8ZEeyxqrp2_sTWng"/>
+        <type xmi:id="_huUN_A8ZEeyxqrp2_sTWng" name="Location">
+          <modelElement href="PetriNetwork_One.uml#_hH8xUA8ZEeyxqrp2_sTWng"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_huUN_Q8ZEeyxqrp2_sTWng" name="addLink">
+      <modelElement href="PetriNetwork_One.uml#_hSHZ8A8ZEeyxqrp2_sTWng"/>
+      <visibility xmi:id="_huUN_g8ZEeyxqrp2_sTWng" label="+"/>
+      <cardinality xmi:id="_huUN_w8ZEeyxqrp2_sTWng" label="1" max="1" min="1"/>
+      <parameters xmi:id="_huUOAA8ZEeyxqrp2_sTWng" name="l">
+        <modelElement href="PetriNetwork_One.uml#_hSHZ8Q8ZEeyxqrp2_sTWng"/>
+        <cardinality xmi:id="_huUOAQ8ZEeyxqrp2_sTWng" label="1" max="1" min="1"/>
+        <type xmi:id="_huUOAg8ZEeyxqrp2_sTWng" name="Link">
+          <modelElement href="PetriNetwork_One.uml#_hJ7HQA8ZEeyxqrp2_sTWng"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_hu8f4A8ZEeyxqrp2_sTWng" name="Location" generalizations="_hu4OcA8ZEeyxqrp2_sTWng">
+    <modelElement href="PetriNetwork_One.uml#_hH8xUA8ZEeyxqrp2_sTWng"/>
+    <visualProperties xmi:id="_hu8f4Q8ZEeyxqrp2_sTWng" position="185.0,279.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_hu8f4g8ZEeyxqrp2_sTWng" label="+"/>
+    <operations xmi:id="_hu8f4w8ZEeyxqrp2_sTWng" name="Location">
+      <modelElement href="PetriNetwork_One.uml#_hH-mgA8ZEeyxqrp2_sTWng"/>
+      <keywords xmi:id="_hu8f5A8ZEeyxqrp2_sTWng" keyword="create"/>
+      <visibility xmi:id="_hu8f5Q8ZEeyxqrp2_sTWng" label="+"/>
+      <cardinality xmi:id="_hu8f5g8ZEeyxqrp2_sTWng" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_hu8f5w8ZEeyxqrp2_sTWng">
+        <modelElement href="PetriNetwork_One.uml#_hH_Nkw8ZEeyxqrp2_sTWng"/>
+        <type xmi:id="_hu8f6A8ZEeyxqrp2_sTWng" name="Location">
+          <modelElement href="PetriNetwork_One.uml#_hH8xUA8ZEeyxqrp2_sTWng"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_hu8f6Q8ZEeyxqrp2_sTWng" name="netId">
+        <modelElement href="PetriNetwork_One.uml#_hH-mgQ8ZEeyxqrp2_sTWng"/>
+        <cardinality xmi:id="_hu8f6g8ZEeyxqrp2_sTWng" label="1" max="1" min="1"/>
+        <type xmi:id="_hu8f6w8ZEeyxqrp2_sTWng" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_hu8f7A8ZEeyxqrp2_sTWng" name="nodeId">
+        <modelElement href="PetriNetwork_One.uml#_hH-mgg8ZEeyxqrp2_sTWng"/>
+        <cardinality xmi:id="_hu8f7Q8ZEeyxqrp2_sTWng" label="1" max="1" min="1"/>
+        <type xmi:id="_hu8f7g8ZEeyxqrp2_sTWng" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_hu8f7w8ZEeyxqrp2_sTWng" name="nodeName">
+        <modelElement href="PetriNetwork_One.uml#_hH_NkA8ZEeyxqrp2_sTWng"/>
+        <cardinality xmi:id="_hu8f8A8ZEeyxqrp2_sTWng" label="1" max="1" min="1"/>
+        <type xmi:id="_hu8f8Q8ZEeyxqrp2_sTWng" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_hvbBAA8ZEeyxqrp2_sTWng" name="ReadN">
+    <modelElement href="PetriNetwork_One.uml#_hJlJAA8ZEeyxqrp2_sTWng"/>
+    <visualProperties xmi:id="_hvbBAQ8ZEeyxqrp2_sTWng" position="235.0,472.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_hvbBAg8ZEeyxqrp2_sTWng" label="+"/>
+    <attributes xmi:id="_hvbBAw8ZEeyxqrp2_sTWng" defaultValue="-1" name="ID_INIZIALE" staticAttribute="true">
+      <modelElement href="PetriNetwork_One.uml#_hT7X0A8ZEeyxqrp2_sTWng"/>
+      <visualProperties xmi:id="_tqnLMQ8aEeyxqrp2_sTWng"/>
+      <stereotypes xmi:id="_hvbBBA8ZEeyxqrp2_sTWng" name="LegacyStyledElement">
+        <modelElement href="PetriNetwork_One.uml#_hT8l8A8ZEeyxqrp2_sTWng"/>
+      </stereotypes>
+      <visibility xmi:id="_hvbBBQ8ZEeyxqrp2_sTWng" label="-"/>
+      <cardinality xmi:id="_hvbBBg8ZEeyxqrp2_sTWng" label="1" max="1" min="1"/>
+      <type xmi:id="_hvbBBw8ZEeyxqrp2_sTWng" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_hvbBCA8ZEeyxqrp2_sTWng" comments="_hvUTUA8ZEeyxqrp2_sTWng" targetConnectionVisual="_hvU6YA8ZEeyxqrp2_sTWng" name="readNets" staticOperation="true">
+      <modelElement href="PetriNetwork_One.uml#_hJm-MA8ZEeyxqrp2_sTWng"/>
+      <visualProperties xmi:id="_uU_k8A8aEeyxqrp2_sTWng"/>
+      <stereotypes xmi:id="_hvbBCQ8ZEeyxqrp2_sTWng" name="Generics">
+        <modelElement href="PetriNetwork_One.uml#_hJpacA8ZEeyxqrp2_sTWng"/>
+      </stereotypes>
+      <visibility xmi:id="_hvbBCg8ZEeyxqrp2_sTWng" label="+"/>
+      <cardinality xmi:id="_hvbBCw8ZEeyxqrp2_sTWng" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_hvbBDA8ZEeyxqrp2_sTWng">
+        <modelElement href="PetriNetwork_One.uml#_hTBY4A8ZEeyxqrp2_sTWng"/>
+        <type xmi:id="_hvbBDQ8ZEeyxqrp2_sTWng" name="ArrayList">
+          <modelElement href="PetriNetwork_One.uml#_hRrVEA8ZEeyxqrp2_sTWng"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_hvbBDg8ZEeyxqrp2_sTWng" comments="_hvVhcA8ZEeyxqrp2_sTWng" targetConnectionVisual="_hvVhcQ8ZEeyxqrp2_sTWng" name="getNetIDsFromFile" staticOperation="true">
+      <modelElement href="PetriNetwork_One.uml#_hJqokA8ZEeyxqrp2_sTWng"/>
+      <visualProperties xmi:id="_uVAMAA8aEeyxqrp2_sTWng"/>
+      <stereotypes xmi:id="_hvbBDw8ZEeyxqrp2_sTWng" name="Generics">
+        <modelElement href="PetriNetwork_One.uml#_hJsdwA8ZEeyxqrp2_sTWng"/>
+      </stereotypes>
+      <visibility xmi:id="_hvbBEA8ZEeyxqrp2_sTWng" label="+"/>
+      <cardinality xmi:id="_hvbBEQ8ZEeyxqrp2_sTWng" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_hvbBEg8ZEeyxqrp2_sTWng">
+        <modelElement href="PetriNetwork_One.uml#_hTDOEA8ZEeyxqrp2_sTWng"/>
+        <type xmi:id="_hvbBEw8ZEeyxqrp2_sTWng" name="ArrayList">
+          <modelElement href="PetriNetwork_One.uml#_hRrVEA8ZEeyxqrp2_sTWng"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_hvbBFA8ZEeyxqrp2_sTWng" name="checkIdExistence" staticOperation="true">
+      <modelElement href="PetriNetwork_One.uml#_hJtE0A8ZEeyxqrp2_sTWng"/>
+      <visualProperties xmi:id="_uVAzEA8aEeyxqrp2_sTWng"/>
+      <visibility xmi:id="_hvbBFQ8ZEeyxqrp2_sTWng" label="+"/>
+      <cardinality xmi:id="_hvbBFg8ZEeyxqrp2_sTWng" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_hvbBFw8ZEeyxqrp2_sTWng">
+        <modelElement href="PetriNetwork_One.uml#_hJtr4A8ZEeyxqrp2_sTWng"/>
+        <type xmi:id="_hvbBGA8ZEeyxqrp2_sTWng" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_hvbBGQ8ZEeyxqrp2_sTWng" name="id">
+        <modelElement href="PetriNetwork_One.uml#_hJtE0Q8ZEeyxqrp2_sTWng"/>
+        <cardinality xmi:id="_hvbBGg8ZEeyxqrp2_sTWng" label="1" max="1" min="1"/>
+        <type xmi:id="_hvbBGw8ZEeyxqrp2_sTWng" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_hvbBHA8ZEeyxqrp2_sTWng" comments="_hvWIgA8ZEeyxqrp2_sTWng" targetConnectionVisual="_hvWvkA8ZEeyxqrp2_sTWng" name="getNetNamesList" staticOperation="true">
+      <modelElement href="PetriNetwork_One.uml#_hJuS8A8ZEeyxqrp2_sTWng"/>
+      <visualProperties xmi:id="_uVAzEQ8aEeyxqrp2_sTWng"/>
+      <visibility xmi:id="_hvbBHQ8ZEeyxqrp2_sTWng" label="+"/>
+      <cardinality xmi:id="_hvbBHg8ZEeyxqrp2_sTWng" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_hvbBHw8ZEeyxqrp2_sTWng">
+        <modelElement href="PetriNetwork_One.uml#_hTDOEQ8ZEeyxqrp2_sTWng"/>
+        <type xmi:id="_hvbBIA8ZEeyxqrp2_sTWng" name="StringBuffer">
+          <modelElement href="PetriNetwork_One.uml#_hS0kkQ8ZEeyxqrp2_sTWng"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_hvbBIQ8ZEeyxqrp2_sTWng" comments="_hvXWoA8ZEeyxqrp2_sTWng" targetConnectionVisual="_hvXWoQ8ZEeyxqrp2_sTWng" name="getNames" staticOperation="true">
+      <modelElement href="PetriNetwork_One.uml#_hJu6AA8ZEeyxqrp2_sTWng"/>
+      <visualProperties xmi:id="_uVBaIA8aEeyxqrp2_sTWng"/>
+      <stereotypes xmi:id="_hvbBIg8ZEeyxqrp2_sTWng" name="Generics">
+        <modelElement href="PetriNetwork_One.uml#_hJwvMA8ZEeyxqrp2_sTWng"/>
+      </stereotypes>
+      <visibility xmi:id="_hvbBIw8ZEeyxqrp2_sTWng" label="+"/>
+      <cardinality xmi:id="_hvbBJA8ZEeyxqrp2_sTWng" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_hvbBJQ8ZEeyxqrp2_sTWng">
+        <modelElement href="PetriNetwork_One.uml#_hTD1IA8ZEeyxqrp2_sTWng"/>
+        <type xmi:id="_hvbBJg8ZEeyxqrp2_sTWng" name="ArrayList">
+          <modelElement href="PetriNetwork_One.uml#_hRrVEA8ZEeyxqrp2_sTWng"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_hvbBJw8ZEeyxqrp2_sTWng" name="checkNetNameExistence" staticOperation="true">
+      <modelElement href="PetriNetwork_One.uml#_hJx9UA8ZEeyxqrp2_sTWng"/>
+      <visualProperties xmi:id="_uVBaIQ8aEeyxqrp2_sTWng"/>
+      <visibility xmi:id="_hvbBKA8ZEeyxqrp2_sTWng" label="+"/>
+      <cardinality xmi:id="_hvbBKQ8ZEeyxqrp2_sTWng" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_hvbBKg8ZEeyxqrp2_sTWng">
+        <modelElement href="PetriNetwork_One.uml#_hJykYQ8ZEeyxqrp2_sTWng"/>
+        <type xmi:id="_hvbBKw8ZEeyxqrp2_sTWng" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_hvbBLA8ZEeyxqrp2_sTWng" name="s">
+        <modelElement href="PetriNetwork_One.uml#_hJykYA8ZEeyxqrp2_sTWng"/>
+        <cardinality xmi:id="_hvbBLQ8ZEeyxqrp2_sTWng" label="1" max="1" min="1"/>
+        <type xmi:id="_hvbBLg8ZEeyxqrp2_sTWng" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_hvbBLw8ZEeyxqrp2_sTWng" comments="_hvX9sA8ZEeyxqrp2_sTWng" targetConnectionVisual="_hvX9sQ8ZEeyxqrp2_sTWng" name="getNetworkFromFile" staticOperation="true">
+      <modelElement href="PetriNetwork_One.uml#_hJzLcA8ZEeyxqrp2_sTWng"/>
+      <visualProperties xmi:id="_uVCBMA8aEeyxqrp2_sTWng"/>
+      <visibility xmi:id="_hvbBMA8ZEeyxqrp2_sTWng" label="+"/>
+      <cardinality xmi:id="_hvbBMQ8ZEeyxqrp2_sTWng" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_hvbBMg8ZEeyxqrp2_sTWng">
+        <modelElement href="PetriNetwork_One.uml#_hScKEA8ZEeyxqrp2_sTWng"/>
+        <type xmi:id="_hvbBMw8ZEeyxqrp2_sTWng" name="Network">
+          <modelElement href="PetriNetwork_One.uml#_hItmUA8ZEeyxqrp2_sTWng"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_hvbBNA8ZEeyxqrp2_sTWng" name="netID">
+        <modelElement href="PetriNetwork_One.uml#_hJzLcQ8ZEeyxqrp2_sTWng"/>
+        <cardinality xmi:id="_hvbBNQ8ZEeyxqrp2_sTWng" label="1" max="1" min="1"/>
+        <type xmi:id="_hvbBNg8ZEeyxqrp2_sTWng" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_hvbBNw8ZEeyxqrp2_sTWng" comments="_hvYkwA8ZEeyxqrp2_sTWng" targetConnectionVisual="_hvYkwQ8ZEeyxqrp2_sTWng" name="jsonToNetwork" staticOperation="true">
+      <modelElement href="PetriNetwork_One.uml#_hJ1AoA8ZEeyxqrp2_sTWng"/>
+      <visualProperties xmi:id="_uVCBMQ8aEeyxqrp2_sTWng"/>
+      <visibility xmi:id="_hvbBOA8ZEeyxqrp2_sTWng" label="+"/>
+      <cardinality xmi:id="_hvbBOQ8ZEeyxqrp2_sTWng" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_hvbBOg8ZEeyxqrp2_sTWng">
+        <modelElement href="PetriNetwork_One.uml#_hScxIA8ZEeyxqrp2_sTWng"/>
+        <type xmi:id="_hvbBOw8ZEeyxqrp2_sTWng" name="Network">
+          <modelElement href="PetriNetwork_One.uml#_hItmUA8ZEeyxqrp2_sTWng"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_hvbBPA8ZEeyxqrp2_sTWng" name="s">
+        <modelElement href="PetriNetwork_One.uml#_hJ1AoQ8ZEeyxqrp2_sTWng"/>
+        <cardinality xmi:id="_hvbBPQ8ZEeyxqrp2_sTWng" label="1" max="1" min="1"/>
+        <type xmi:id="_hvbBPg8ZEeyxqrp2_sTWng" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_hvbBPw8ZEeyxqrp2_sTWng" name="dataIsEmpty" staticOperation="true">
+      <modelElement href="PetriNetwork_One.uml#_hJ1nsA8ZEeyxqrp2_sTWng"/>
+      <visualProperties xmi:id="_uVCBMg8aEeyxqrp2_sTWng"/>
+      <visibility xmi:id="_hvbBQA8ZEeyxqrp2_sTWng" label="+"/>
+      <cardinality xmi:id="_hvbBQQ8ZEeyxqrp2_sTWng" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_hvbBQg8ZEeyxqrp2_sTWng">
+        <modelElement href="PetriNetwork_One.uml#_hJ2OwA8ZEeyxqrp2_sTWng"/>
+        <type xmi:id="_hvbBQw8ZEeyxqrp2_sTWng" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </outParameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_hv3F4A8ZEeyxqrp2_sTWng" name="Utility" associationsOut="_hv2e0A8ZEeyxqrp2_sTWng">
+    <modelElement href="PetriNetwork_One.uml#_hJ_YsA8ZEeyxqrp2_sTWng"/>
+    <visualProperties xmi:id="_hv3F4Q8ZEeyxqrp2_sTWng" position="204.0,909.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_hv3F4g8ZEeyxqrp2_sTWng" label="+"/>
+    <attributes xmi:id="_hv3F4w8ZEeyxqrp2_sTWng" defaultValue="creaScanner()" name="scanner" staticAttribute="true">
+      <modelElement href="PetriNetwork_One.uml#_hUA3YA8ZEeyxqrp2_sTWng"/>
+      <visualProperties xmi:id="_tqnLMg8aEeyxqrp2_sTWng"/>
+      <stereotypes xmi:id="_hv3F5A8ZEeyxqrp2_sTWng" name="LegacyStyledElement">
+        <modelElement href="PetriNetwork_One.uml#_hUBecA8ZEeyxqrp2_sTWng"/>
+      </stereotypes>
+      <visibility xmi:id="_hv3F5Q8ZEeyxqrp2_sTWng" label="-"/>
+      <cardinality xmi:id="_hv3F5g8ZEeyxqrp2_sTWng" label="1" max="1" min="1"/>
+      <type xmi:id="_hv3F5w8ZEeyxqrp2_sTWng" name="Scanner">
+        <modelElement href="PetriNetwork_One.uml#_hRuYYA8ZEeyxqrp2_sTWng"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_hv3F6A8ZEeyxqrp2_sTWng" defaultValue="&quot;Errore inserimento, per favore inserisci un valore appropriato&quot;" name="ERRORE_INSERIMENTO" staticAttribute="true">
+      <modelElement href="PetriNetwork_One.uml#_hUBecQ8ZEeyxqrp2_sTWng"/>
+      <visualProperties xmi:id="_tqnyQA8aEeyxqrp2_sTWng"/>
+      <stereotypes xmi:id="_hv3F6Q8ZEeyxqrp2_sTWng" name="LegacyStyledElement">
+        <modelElement href="PetriNetwork_One.uml#_hUCskA8ZEeyxqrp2_sTWng"/>
+      </stereotypes>
+      <visibility xmi:id="_hv3F6g8ZEeyxqrp2_sTWng" label="-"/>
+      <cardinality xmi:id="_hv3F6w8ZEeyxqrp2_sTWng" label="1" max="1" min="1"/>
+      <type xmi:id="_hv3F7A8ZEeyxqrp2_sTWng" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_hv3F7Q8ZEeyxqrp2_sTWng" name="creaScanner" staticOperation="true">
+      <modelElement href="PetriNetwork_One.uml#_hKAm0A8ZEeyxqrp2_sTWng"/>
+      <visualProperties xmi:id="_tqnyQQ8aEeyxqrp2_sTWng"/>
+      <visibility xmi:id="_hv3F7g8ZEeyxqrp2_sTWng" label="-"/>
+      <cardinality xmi:id="_hv3F7w8ZEeyxqrp2_sTWng" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_hv3F8A8ZEeyxqrp2_sTWng">
+        <modelElement href="PetriNetwork_One.uml#_hTGRYA8ZEeyxqrp2_sTWng"/>
+        <type xmi:id="_hv3F8Q8ZEeyxqrp2_sTWng" name="Scanner">
+          <modelElement href="PetriNetwork_One.uml#_hRuYYA8ZEeyxqrp2_sTWng"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_hv3F8g8ZEeyxqrp2_sTWng" name="readInt" staticOperation="true">
+      <modelElement href="PetriNetwork_One.uml#_hKB08A8ZEeyxqrp2_sTWng"/>
+      <visualProperties xmi:id="_uVCoQA8aEeyxqrp2_sTWng"/>
+      <visibility xmi:id="_hv3F8w8ZEeyxqrp2_sTWng" label="+"/>
+      <cardinality xmi:id="_hv3F9A8ZEeyxqrp2_sTWng" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_hv3F9Q8ZEeyxqrp2_sTWng">
+        <modelElement href="PetriNetwork_One.uml#_hKB08Q8ZEeyxqrp2_sTWng"/>
+        <type xmi:id="_hv3F9g8ZEeyxqrp2_sTWng" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_hv3F9w8ZEeyxqrp2_sTWng" name="readLimitedInt" staticOperation="true">
+      <modelElement href="PetriNetwork_One.uml#_hKDDEA8ZEeyxqrp2_sTWng"/>
+      <visualProperties xmi:id="_uVCoQQ8aEeyxqrp2_sTWng"/>
+      <visibility xmi:id="_hv3F-A8ZEeyxqrp2_sTWng" label="+"/>
+      <cardinality xmi:id="_hv3F-Q8ZEeyxqrp2_sTWng" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_hv3F-g8ZEeyxqrp2_sTWng">
+        <modelElement href="PetriNetwork_One.uml#_hKDqIA8ZEeyxqrp2_sTWng"/>
+        <type xmi:id="_hv3F-w8ZEeyxqrp2_sTWng" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_hv3F_A8ZEeyxqrp2_sTWng" name="min">
+        <modelElement href="PetriNetwork_One.uml#_hKDDEQ8ZEeyxqrp2_sTWng"/>
+        <cardinality xmi:id="_hv3F_Q8ZEeyxqrp2_sTWng" label="1" max="1" min="1"/>
+        <type xmi:id="_hv3F_g8ZEeyxqrp2_sTWng" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_hv3F_w8ZEeyxqrp2_sTWng" name="max">
+        <modelElement href="PetriNetwork_One.uml#_hKDDEg8ZEeyxqrp2_sTWng"/>
+        <cardinality xmi:id="_hv3GAA8ZEeyxqrp2_sTWng" label="1" max="1" min="1"/>
+        <type xmi:id="_hv3GAQ8ZEeyxqrp2_sTWng" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_hv3GAg8ZEeyxqrp2_sTWng" name="readString" staticOperation="true">
+      <modelElement href="PetriNetwork_One.uml#_hKERMA8ZEeyxqrp2_sTWng"/>
+      <visualProperties xmi:id="_uVCoQg8aEeyxqrp2_sTWng"/>
+      <visibility xmi:id="_hv3GAw8ZEeyxqrp2_sTWng" label="+"/>
+      <cardinality xmi:id="_hv3GBA8ZEeyxqrp2_sTWng" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_hv3GBQ8ZEeyxqrp2_sTWng">
+        <modelElement href="PetriNetwork_One.uml#_hKE4QA8ZEeyxqrp2_sTWng"/>
+        <type xmi:id="_hv3GBg8ZEeyxqrp2_sTWng" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_hv3GBw8ZEeyxqrp2_sTWng" name="close" staticOperation="true">
+      <modelElement href="PetriNetwork_One.uml#_hKFfUA8ZEeyxqrp2_sTWng"/>
+      <visualProperties xmi:id="_uVCoQw8aEeyxqrp2_sTWng"/>
+      <visibility xmi:id="_hv3GCA8ZEeyxqrp2_sTWng" label="+"/>
+      <cardinality xmi:id="_hv3GCQ8ZEeyxqrp2_sTWng" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_hv3GCg8ZEeyxqrp2_sTWng" name="nameCheck" staticOperation="true">
+      <modelElement href="PetriNetwork_One.uml#_hSks8A8ZEeyxqrp2_sTWng"/>
+      <visualProperties xmi:id="_uVCoRA8aEeyxqrp2_sTWng"/>
+      <visibility xmi:id="_hv3GCw8ZEeyxqrp2_sTWng" label="+"/>
+      <cardinality xmi:id="_hv3GDA8ZEeyxqrp2_sTWng" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_hv3GDQ8ZEeyxqrp2_sTWng">
+        <modelElement href="PetriNetwork_One.uml#_hSks8w8ZEeyxqrp2_sTWng"/>
+        <type xmi:id="_hv3GDg8ZEeyxqrp2_sTWng" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_hv3GDw8ZEeyxqrp2_sTWng" name="n">
+        <modelElement href="PetriNetwork_One.uml#_hSks8Q8ZEeyxqrp2_sTWng"/>
+        <cardinality xmi:id="_hv3GEA8ZEeyxqrp2_sTWng" label="1" max="1" min="1"/>
+        <type xmi:id="_hv3GEQ8ZEeyxqrp2_sTWng" name="NameGiver">
+          <modelElement href="PetriNetwork_One.uml#_hIp78A8ZEeyxqrp2_sTWng"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_hv3GEg8ZEeyxqrp2_sTWng" name="s">
+        <modelElement href="PetriNetwork_One.uml#_hSks8g8ZEeyxqrp2_sTWng"/>
+        <cardinality xmi:id="_hv3GEw8ZEeyxqrp2_sTWng" label="1" max="1" min="1"/>
+        <type xmi:id="_hv3GFA8ZEeyxqrp2_sTWng" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_hv3GFQ8ZEeyxqrp2_sTWng" name="getMax" staticOperation="true">
+      <modelElement href="PetriNetwork_One.uml#_hTG4cA8ZEeyxqrp2_sTWng"/>
+      <visualProperties xmi:id="_uVDPUA8aEeyxqrp2_sTWng"/>
+      <visibility xmi:id="_hv3GFg8ZEeyxqrp2_sTWng" label="+"/>
+      <cardinality xmi:id="_hv3GFw8ZEeyxqrp2_sTWng" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_hv3GGA8ZEeyxqrp2_sTWng">
+        <modelElement href="PetriNetwork_One.uml#_hTHfgQ8ZEeyxqrp2_sTWng"/>
+        <type xmi:id="_hv3GGQ8ZEeyxqrp2_sTWng" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_hv3GGg8ZEeyxqrp2_sTWng" name="integer">
+        <modelElement href="PetriNetwork_One.uml#_hTHfgA8ZEeyxqrp2_sTWng"/>
+        <cardinality xmi:id="_hv3GGw8ZEeyxqrp2_sTWng" label="1" max="1" min="1"/>
+        <type xmi:id="_hv3GHA8ZEeyxqrp2_sTWng" name="ArrayList">
+          <modelElement href="PetriNetwork_One.uml#_hRrVEA8ZEeyxqrp2_sTWng"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_hwIysA8ZEeyxqrp2_sTWng" name="WriteN">
+    <modelElement href="PetriNetwork_One.uml#_hKK-4A8ZEeyxqrp2_sTWng"/>
+    <visualProperties xmi:id="_hwIysQ8ZEeyxqrp2_sTWng" position="-122.0,599.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_hwIysg8ZEeyxqrp2_sTWng" label="+"/>
+    <attributes xmi:id="_hwIysw8ZEeyxqrp2_sTWng" defaultValue="&quot;errore nel salvataggio&quot;" name="SAVE_ERROR" staticAttribute="true">
+      <modelElement href="PetriNetwork_One.uml#_hUDToA8ZEeyxqrp2_sTWng"/>
+      <visualProperties xmi:id="_uVDPUQ8aEeyxqrp2_sTWng"/>
+      <stereotypes xmi:id="_hwIytA8ZEeyxqrp2_sTWng" name="LegacyStyledElement">
+        <modelElement href="PetriNetwork_One.uml#_hUD6sA8ZEeyxqrp2_sTWng"/>
+      </stereotypes>
+      <visibility xmi:id="_hwIytQ8ZEeyxqrp2_sTWng" label="+"/>
+      <cardinality xmi:id="_hwIytg8ZEeyxqrp2_sTWng" label="1" max="1" min="1"/>
+      <type xmi:id="_hwIytw8ZEeyxqrp2_sTWng" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_hwIyuA8ZEeyxqrp2_sTWng" name="fileCreation" staticOperation="true">
+      <modelElement href="PetriNetwork_One.uml#_hKM0EA8ZEeyxqrp2_sTWng"/>
+      <visualProperties xmi:id="_uVD2YA8aEeyxqrp2_sTWng"/>
+      <visibility xmi:id="_hwIyuQ8ZEeyxqrp2_sTWng" label="+"/>
+      <cardinality xmi:id="_hwIyug8ZEeyxqrp2_sTWng" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_hwIyuw8ZEeyxqrp2_sTWng" name="save" staticOperation="true">
+      <modelElement href="PetriNetwork_One.uml#_hSqMgQ8ZEeyxqrp2_sTWng"/>
+      <visualProperties xmi:id="_uVD2YQ8aEeyxqrp2_sTWng"/>
+      <visibility xmi:id="_hwIyvA8ZEeyxqrp2_sTWng" label="+"/>
+      <cardinality xmi:id="_hwIyvQ8ZEeyxqrp2_sTWng" label="1" max="1" min="1"/>
+      <parameters xmi:id="_hwIyvg8ZEeyxqrp2_sTWng" name="net">
+        <modelElement href="PetriNetwork_One.uml#_hSqzkA8ZEeyxqrp2_sTWng"/>
+        <cardinality xmi:id="_hwIyvw8ZEeyxqrp2_sTWng" label="1" max="1" min="1"/>
+        <type xmi:id="_hwIywA8ZEeyxqrp2_sTWng" name="Network">
+          <modelElement href="PetriNetwork_One.uml#_hItmUA8ZEeyxqrp2_sTWng"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_hwYDQA8ZEeyxqrp2_sTWng" name="Link" associationsIn="_hrm4AA8ZEeyxqrp2_sTWng _hrp7UA8ZEeyxqrp2_sTWng">
+    <modelElement href="PetriNetwork_One.uml#_hJ7HQA8ZEeyxqrp2_sTWng"/>
+    <visualProperties xmi:id="_hwYDQQ8ZEeyxqrp2_sTWng" position="33.0,-105.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_hwYDQg8ZEeyxqrp2_sTWng" label="+"/>
+    <attributes xmi:id="_hwYDQw8ZEeyxqrp2_sTWng" name="origin">
+      <modelElement href="PetriNetwork_One.uml#_hT90EA8ZEeyxqrp2_sTWng"/>
+      <visibility xmi:id="_hwYDRA8ZEeyxqrp2_sTWng" label="+"/>
+      <cardinality xmi:id="_hwYDRQ8ZEeyxqrp2_sTWng" label="1" max="1" min="1"/>
+      <type xmi:id="_hwYDRg8ZEeyxqrp2_sTWng" name="Node">
+        <modelElement href="PetriNetwork_One.uml#_hJTcMA8ZEeyxqrp2_sTWng"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_hwYDRw8ZEeyxqrp2_sTWng" name="destination">
+      <modelElement href="PetriNetwork_One.uml#_hT-bIA8ZEeyxqrp2_sTWng"/>
+      <visibility xmi:id="_hwYDSA8ZEeyxqrp2_sTWng" label="+"/>
+      <cardinality xmi:id="_hwYDSQ8ZEeyxqrp2_sTWng" label="1" max="1" min="1"/>
+      <type xmi:id="_hwYDSg8ZEeyxqrp2_sTWng" name="Node">
+        <modelElement href="PetriNetwork_One.uml#_hJTcMA8ZEeyxqrp2_sTWng"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_hwYDSw8ZEeyxqrp2_sTWng" name="netId">
+      <modelElement href="PetriNetwork_One.uml#_hT_pQA8ZEeyxqrp2_sTWng"/>
+      <visualProperties xmi:id="_tqoZUA8aEeyxqrp2_sTWng"/>
+      <stereotypes xmi:id="_hwYDTA8ZEeyxqrp2_sTWng" name="LegacyStyledElement">
+        <modelElement href="PetriNetwork_One.uml#_hUAQUA8ZEeyxqrp2_sTWng"/>
+      </stereotypes>
+      <visibility xmi:id="_hwYDTQ8ZEeyxqrp2_sTWng" label="-"/>
+      <cardinality xmi:id="_hwYDTg8ZEeyxqrp2_sTWng" label="1" max="1" min="1"/>
+      <type xmi:id="_hwYDTw8ZEeyxqrp2_sTWng" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_hwYDUA8ZEeyxqrp2_sTWng" name="Link">
+      <modelElement href="PetriNetwork_One.uml#_hSgbgA8ZEeyxqrp2_sTWng"/>
+      <keywords xmi:id="_hwYDUQ8ZEeyxqrp2_sTWng" keyword="create"/>
+      <visibility xmi:id="_hwYDUg8ZEeyxqrp2_sTWng" label="+"/>
+      <cardinality xmi:id="_hwYDUw8ZEeyxqrp2_sTWng" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_hwYDVA8ZEeyxqrp2_sTWng">
+        <modelElement href="PetriNetwork_One.uml#_hShpog8ZEeyxqrp2_sTWng"/>
+        <type xmi:id="_hwYDVQ8ZEeyxqrp2_sTWng" name="Link">
+          <modelElement href="PetriNetwork_One.uml#_hJ7HQA8ZEeyxqrp2_sTWng"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_hwYDVg8ZEeyxqrp2_sTWng" name="origin">
+        <modelElement href="PetriNetwork_One.uml#_hSgbgQ8ZEeyxqrp2_sTWng"/>
+        <cardinality xmi:id="_hwYDVw8ZEeyxqrp2_sTWng" label="1" max="1" min="1"/>
+        <type xmi:id="_hwYDWA8ZEeyxqrp2_sTWng" name="Node">
+          <modelElement href="PetriNetwork_One.uml#_hJTcMA8ZEeyxqrp2_sTWng"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_hwYDWQ8ZEeyxqrp2_sTWng" name="destination">
+        <modelElement href="PetriNetwork_One.uml#_hShCkA8ZEeyxqrp2_sTWng"/>
+        <cardinality xmi:id="_hwYDWg8ZEeyxqrp2_sTWng" label="1" max="1" min="1"/>
+        <type xmi:id="_hwYDWw8ZEeyxqrp2_sTWng" name="Node">
+          <modelElement href="PetriNetwork_One.uml#_hJTcMA8ZEeyxqrp2_sTWng"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_hwYDXA8ZEeyxqrp2_sTWng" name="netId">
+        <modelElement href="PetriNetwork_One.uml#_hShCkQ8ZEeyxqrp2_sTWng"/>
+        <cardinality xmi:id="_hwYDXQ8ZEeyxqrp2_sTWng" label="1" max="1" min="1"/>
+        <type xmi:id="_hwYDXg8ZEeyxqrp2_sTWng" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_hwnT0A8ZEeyxqrp2_sTWng" name="Main">
+    <modelElement href="PetriNetwork_One.uml#_hICQ4A8ZEeyxqrp2_sTWng"/>
+    <visualProperties xmi:id="_hwnT0Q8ZEeyxqrp2_sTWng" position="526.0,764.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_hwnT0g8ZEeyxqrp2_sTWng" label="+"/>
+    <operations xmi:id="_hwnT0w8ZEeyxqrp2_sTWng" name="main" staticOperation="true">
+      <modelElement href="PetriNetwork_One.uml#_hIDfAA8ZEeyxqrp2_sTWng"/>
+      <visualProperties xmi:id="_uVD2Yg8aEeyxqrp2_sTWng"/>
+      <visibility xmi:id="_hwnT1A8ZEeyxqrp2_sTWng" label="+"/>
+      <cardinality xmi:id="_hwnT1Q8ZEeyxqrp2_sTWng" label="1" max="1" min="1"/>
+      <parameters xmi:id="_hwnT1g8ZEeyxqrp2_sTWng" name="args">
+        <modelElement href="PetriNetwork_One.uml#_hIEGEA8ZEeyxqrp2_sTWng"/>
+        <cardinality xmi:id="_hwnT1w8ZEeyxqrp2_sTWng" label="1..*" max="-1" min="1"/>
+        <type xmi:id="_hwnT2A8ZEeyxqrp2_sTWng" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_hw95IA8ZEeyxqrp2_sTWng" name="Menu" associationsOut="_hwtacA8ZEeyxqrp2_sTWng _hwvPpA8ZEeyxqrp2_sTWng">
+    <modelElement href="PetriNetwork_One.uml#_hIF7QA8ZEeyxqrp2_sTWng"/>
+    <visualProperties xmi:id="_hw95IQ8ZEeyxqrp2_sTWng" position="-671.0,186.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_hw95Ig8ZEeyxqrp2_sTWng" label="+"/>
+    <attributes xmi:id="_hw95Iw8ZEeyxqrp2_sTWng" defaultValue="&quot;Seleziona: &quot;" name="SELEZIONE">
+      <modelElement href="PetriNetwork_One.uml#_hTPbUA8ZEeyxqrp2_sTWng"/>
+      <visualProperties xmi:id="_tqoZUQ8aEeyxqrp2_sTWng"/>
+      <stereotypes xmi:id="_hw95JA8ZEeyxqrp2_sTWng" name="LegacyStyledElement">
+        <modelElement href="PetriNetwork_One.uml#_hTRQgA8ZEeyxqrp2_sTWng"/>
+      </stereotypes>
+      <visibility xmi:id="_hw95JQ8ZEeyxqrp2_sTWng" label="~"/>
+      <cardinality xmi:id="_hw95Jg8ZEeyxqrp2_sTWng" label="1" max="1" min="1"/>
+      <type xmi:id="_hw95Jw8ZEeyxqrp2_sTWng" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_hw95KA8ZEeyxqrp2_sTWng" defaultValue="{&#xD;&#xA;&#x9;&#x9;&#x9;&quot;MENU:&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&quot;___________________________&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&quot;1:Crea Network&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&quot;2:Salva reti&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&quot;3:Visualizza reti&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&quot;0:Esci&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&quot;___________________________&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&#xD;&#xA;&#x9;}" name="MENUSTART">
+      <modelElement href="PetriNetwork_One.uml#_hTRQgQ8ZEeyxqrp2_sTWng"/>
+      <visualProperties xmi:id="_tqoZUg8aEeyxqrp2_sTWng"/>
+      <stereotypes xmi:id="_hw95KQ8ZEeyxqrp2_sTWng" name="Array">
+        <modelElement href="PetriNetwork_One.uml#_hTSeoA8ZEeyxqrp2_sTWng"/>
+      </stereotypes>
+      <stereotypes xmi:id="_hw95Kg8ZEeyxqrp2_sTWng" name="LegacyStyledElement">
+        <modelElement href="PetriNetwork_One.uml#_hTUT0A8ZEeyxqrp2_sTWng"/>
+      </stereotypes>
+      <visibility xmi:id="_hw95Kw8ZEeyxqrp2_sTWng" label="~"/>
+      <cardinality xmi:id="_hw95LA8ZEeyxqrp2_sTWng" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_hw95LQ8ZEeyxqrp2_sTWng" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_hw95Lg8ZEeyxqrp2_sTWng" defaultValue="{&#xD;&#xA;&#x9;&#x9;&#x9;&quot;Scegli cosa fare:&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&quot;___________________________&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&quot;1:Crea location&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&quot;2:Crea transition&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&quot;3:Crea link&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&quot;0:Indietro&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&quot;___________________________&quot;}" name="MENUNETWORK">
+      <modelElement href="PetriNetwork_One.uml#_hTUT0Q8ZEeyxqrp2_sTWng"/>
+      <visualProperties xmi:id="_tqpncA8aEeyxqrp2_sTWng"/>
+      <stereotypes xmi:id="_hw95Lw8ZEeyxqrp2_sTWng" name="Array">
+        <modelElement href="PetriNetwork_One.uml#_hTU64A8ZEeyxqrp2_sTWng"/>
+      </stereotypes>
+      <stereotypes xmi:id="_hw95MA8ZEeyxqrp2_sTWng" name="LegacyStyledElement">
+        <modelElement href="PetriNetwork_One.uml#_hTWwEA8ZEeyxqrp2_sTWng"/>
+      </stereotypes>
+      <visibility xmi:id="_hw95MQ8ZEeyxqrp2_sTWng" label="~"/>
+      <cardinality xmi:id="_hw95Mg8ZEeyxqrp2_sTWng" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_hw95Mw8ZEeyxqrp2_sTWng" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_hw95NA8ZEeyxqrp2_sTWng" defaultValue="{&#xD;&#xA;&#x9;&#x9;&#x9;&quot;Scegli cosa fare:&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&quot;___________________________&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&quot;1:Salva una rete&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&quot;2:Salva tutte le reti&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&quot;0:Indietro&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&quot;___________________________&quot;}" name="MENUSALVA">
+      <modelElement href="PetriNetwork_One.uml#_hTXXIA8ZEeyxqrp2_sTWng"/>
+      <visualProperties xmi:id="_tqpncQ8aEeyxqrp2_sTWng"/>
+      <stereotypes xmi:id="_hw95NQ8ZEeyxqrp2_sTWng" name="Array">
+        <modelElement href="PetriNetwork_One.uml#_hTX-MA8ZEeyxqrp2_sTWng"/>
+      </stereotypes>
+      <stereotypes xmi:id="_hw95Ng8ZEeyxqrp2_sTWng" name="LegacyStyledElement">
+        <modelElement href="PetriNetwork_One.uml#_hTZMUA8ZEeyxqrp2_sTWng"/>
+      </stereotypes>
+      <visibility xmi:id="_hw95Nw8ZEeyxqrp2_sTWng" label="~"/>
+      <cardinality xmi:id="_hw95OA8ZEeyxqrp2_sTWng" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_hw95OQ8ZEeyxqrp2_sTWng" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_hw95Og8ZEeyxqrp2_sTWng" defaultValue="{&#xD;&#xA;&#x9;&#x9;&#x9;&quot;Cosa vuoi visualizzare?:&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&quot;___________________________&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&quot;1:Visualizza elenco locations&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&quot;2:Visualizza elenco transitions&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&quot;3:Visualizza elenco link &quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&quot;4:Visualizza rete complessiva&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&quot;0:Indietro&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&quot;___________________________&quot;}" name="MENUVISUALIZZA">
+      <modelElement href="PetriNetwork_One.uml#_hTZMUQ8ZEeyxqrp2_sTWng"/>
+      <visualProperties xmi:id="_tqqOgA8aEeyxqrp2_sTWng"/>
+      <stereotypes xmi:id="_hw95Ow8ZEeyxqrp2_sTWng" name="Array">
+        <modelElement href="PetriNetwork_One.uml#_hTZzYQ8ZEeyxqrp2_sTWng"/>
+      </stereotypes>
+      <stereotypes xmi:id="_hw95PA8ZEeyxqrp2_sTWng" name="LegacyStyledElement">
+        <modelElement href="PetriNetwork_One.uml#_hTbBgA8ZEeyxqrp2_sTWng"/>
+      </stereotypes>
+      <visibility xmi:id="_hw95PQ8ZEeyxqrp2_sTWng" label="~"/>
+      <cardinality xmi:id="_hw95Pg8ZEeyxqrp2_sTWng" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_hw95Pw8ZEeyxqrp2_sTWng" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_hw95QA8ZEeyxqrp2_sTWng" defaultValue="&quot;A cosa vuoi collegarla? Inserisci il numero relativo&quot;" name="ASKLINK">
+      <modelElement href="PetriNetwork_One.uml#_hTbokA8ZEeyxqrp2_sTWng"/>
+      <visualProperties xmi:id="_tqqOgQ8aEeyxqrp2_sTWng"/>
+      <stereotypes xmi:id="_hw95QQ8ZEeyxqrp2_sTWng" name="LegacyStyledElement">
+        <modelElement href="PetriNetwork_One.uml#_hTc2sA8ZEeyxqrp2_sTWng"/>
+      </stereotypes>
+      <visibility xmi:id="_hw95Qg8ZEeyxqrp2_sTWng" label="~"/>
+      <cardinality xmi:id="_hw95Qw8ZEeyxqrp2_sTWng" label="1" max="1" min="1"/>
+      <type xmi:id="_hw95RA8ZEeyxqrp2_sTWng" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_hw95RQ8ZEeyxqrp2_sTWng" defaultValue="&quot;Salvataggio eseguito&quot;" name="SALVATAGGIO">
+      <modelElement href="PetriNetwork_One.uml#_hTddwA8ZEeyxqrp2_sTWng"/>
+      <visualProperties xmi:id="_tqq1kA8aEeyxqrp2_sTWng"/>
+      <stereotypes xmi:id="_hw95Rg8ZEeyxqrp2_sTWng" name="LegacyStyledElement">
+        <modelElement href="PetriNetwork_One.uml#_hTer4A8ZEeyxqrp2_sTWng"/>
+      </stereotypes>
+      <visibility xmi:id="_hw95Rw8ZEeyxqrp2_sTWng" label="~"/>
+      <cardinality xmi:id="_hw95SA8ZEeyxqrp2_sTWng" label="1" max="1" min="1"/>
+      <type xmi:id="_hw95SQ8ZEeyxqrp2_sTWng" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_hw95Sg8ZEeyxqrp2_sTWng" defaultValue="&quot;Esiste già una rete con questo nome&quot;" name="NOME_GIA_PRESENTE_RETE">
+      <modelElement href="PetriNetwork_One.uml#_hTfS8A8ZEeyxqrp2_sTWng"/>
+      <visualProperties xmi:id="_tqq1kQ8aEeyxqrp2_sTWng"/>
+      <stereotypes xmi:id="_hw95Sw8ZEeyxqrp2_sTWng" name="LegacyStyledElement">
+        <modelElement href="PetriNetwork_One.uml#_hTghEA8ZEeyxqrp2_sTWng"/>
+      </stereotypes>
+      <visibility xmi:id="_hw95TA8ZEeyxqrp2_sTWng" label="~"/>
+      <cardinality xmi:id="_hw95TQ8ZEeyxqrp2_sTWng" label="1" max="1" min="1"/>
+      <type xmi:id="_hw95Tg8ZEeyxqrp2_sTWng" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_hw95Tw8ZEeyxqrp2_sTWng" defaultValue="&quot;Esiste già una location con questo nome&quot;" name="NOME_GIA_PRESENTE_LOCATION">
+      <modelElement href="PetriNetwork_One.uml#_hThIIA8ZEeyxqrp2_sTWng"/>
+      <visualProperties xmi:id="_tqq1kg8aEeyxqrp2_sTWng"/>
+      <stereotypes xmi:id="_hw95UA8ZEeyxqrp2_sTWng" name="LegacyStyledElement">
+        <modelElement href="PetriNetwork_One.uml#_hTiWQA8ZEeyxqrp2_sTWng"/>
+      </stereotypes>
+      <visibility xmi:id="_hw95UQ8ZEeyxqrp2_sTWng" label="~"/>
+      <cardinality xmi:id="_hw95Ug8ZEeyxqrp2_sTWng" label="1" max="1" min="1"/>
+      <type xmi:id="_hw95Uw8ZEeyxqrp2_sTWng" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_hw95VA8ZEeyxqrp2_sTWng" defaultValue="&quot;Esiste già una transition con questo nome&quot;" name="NOME_GIA_PRESENTE_TRANSITION">
+      <modelElement href="PetriNetwork_One.uml#_hTiWQQ8ZEeyxqrp2_sTWng"/>
+      <visualProperties xmi:id="_tqrcoA8aEeyxqrp2_sTWng"/>
+      <stereotypes xmi:id="_hw95VQ8ZEeyxqrp2_sTWng" name="LegacyStyledElement">
+        <modelElement href="PetriNetwork_One.uml#_hTjkYA8ZEeyxqrp2_sTWng"/>
+      </stereotypes>
+      <visibility xmi:id="_hw95Vg8ZEeyxqrp2_sTWng" label="~"/>
+      <cardinality xmi:id="_hw95Vw8ZEeyxqrp2_sTWng" label="1" max="1" min="1"/>
+      <type xmi:id="_hw95WA8ZEeyxqrp2_sTWng" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_hw95WQ8ZEeyxqrp2_sTWng" defaultValue="&quot;Link già presente&quot;" name="LINK_GIA_PRESENTE">
+      <modelElement href="PetriNetwork_One.uml#_hTkLcA8ZEeyxqrp2_sTWng"/>
+      <visualProperties xmi:id="_tqsDsA8aEeyxqrp2_sTWng"/>
+      <stereotypes xmi:id="_hw95Wg8ZEeyxqrp2_sTWng" name="LegacyStyledElement">
+        <modelElement href="PetriNetwork_One.uml#_hTkygA8ZEeyxqrp2_sTWng"/>
+      </stereotypes>
+      <visibility xmi:id="_hw95Ww8ZEeyxqrp2_sTWng" label="~"/>
+      <cardinality xmi:id="_hw95XA8ZEeyxqrp2_sTWng" label="1" max="1" min="1"/>
+      <type xmi:id="_hw95XQ8ZEeyxqrp2_sTWng" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_hw95Xg8ZEeyxqrp2_sTWng" defaultValue="&quot;Quale rete vuoi salvare?&quot;" name="RICHIESTA_SALVATAGGIO">
+      <modelElement href="PetriNetwork_One.uml#_hTmAoA8ZEeyxqrp2_sTWng"/>
+      <visualProperties xmi:id="_tqsDsQ8aEeyxqrp2_sTWng"/>
+      <stereotypes xmi:id="_hw95Xw8ZEeyxqrp2_sTWng" name="LegacyStyledElement">
+        <modelElement href="PetriNetwork_One.uml#_hTmnsA8ZEeyxqrp2_sTWng"/>
+      </stereotypes>
+      <visibility xmi:id="_hw95YA8ZEeyxqrp2_sTWng" label="~"/>
+      <cardinality xmi:id="_hw95YQ8ZEeyxqrp2_sTWng" label="1" max="1" min="1"/>
+      <type xmi:id="_hw95Yg8ZEeyxqrp2_sTWng" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_hw95Yw8ZEeyxqrp2_sTWng" name="currentNetwork">
+      <modelElement href="PetriNetwork_One.uml#_hTmnsQ8ZEeyxqrp2_sTWng"/>
+      <stereotypes xmi:id="_hw95ZA8ZEeyxqrp2_sTWng" name="LegacyStyledElement">
+        <modelElement href="PetriNetwork_One.uml#_hTn10A8ZEeyxqrp2_sTWng"/>
+      </stereotypes>
+      <visibility xmi:id="_hw95ZQ8ZEeyxqrp2_sTWng" label="-"/>
+      <cardinality xmi:id="_hw95Zg8ZEeyxqrp2_sTWng" label="1" max="1" min="1"/>
+      <type xmi:id="_hw95Zw8ZEeyxqrp2_sTWng" name="Network">
+        <modelElement href="PetriNetwork_One.uml#_hItmUA8ZEeyxqrp2_sTWng"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_hw95aA8ZEeyxqrp2_sTWng" name="networks">
+      <modelElement href="PetriNetwork_One.uml#_hToc4A8ZEeyxqrp2_sTWng"/>
+      <visualProperties xmi:id="_tqsDsg8aEeyxqrp2_sTWng"/>
+      <stereotypes xmi:id="_hw95aQ8ZEeyxqrp2_sTWng" name="Generics">
+        <modelElement href="PetriNetwork_One.uml#_hTqSEA8ZEeyxqrp2_sTWng"/>
+      </stereotypes>
+      <stereotypes xmi:id="_hw95ag8ZEeyxqrp2_sTWng" name="LegacyStyledElement">
+        <modelElement href="PetriNetwork_One.uml#_hTq5IA8ZEeyxqrp2_sTWng"/>
+      </stereotypes>
+      <visibility xmi:id="_hw95aw8ZEeyxqrp2_sTWng" label="-"/>
+      <cardinality xmi:id="_hw95bA8ZEeyxqrp2_sTWng" label="1" max="1" min="1"/>
+      <type xmi:id="_hw95bQ8ZEeyxqrp2_sTWng" name="ArrayList">
+        <modelElement href="PetriNetwork_One.uml#_hRrVEA8ZEeyxqrp2_sTWng"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_hw95bg8ZEeyxqrp2_sTWng" comments="_hwv2sA8ZEeyxqrp2_sTWng" targetConnectionVisual="_hwv2sQ8ZEeyxqrp2_sTWng" name="Menu">
+      <modelElement href="PetriNetwork_One.uml#_hIN3EA8ZEeyxqrp2_sTWng"/>
+      <keywords xmi:id="_hw95bw8ZEeyxqrp2_sTWng" keyword="create"/>
+      <visibility xmi:id="_hw95cA8ZEeyxqrp2_sTWng" label="+"/>
+      <cardinality xmi:id="_hw95cQ8ZEeyxqrp2_sTWng" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_hw95cg8ZEeyxqrp2_sTWng">
+        <modelElement href="PetriNetwork_One.uml#_hIPFMg8ZEeyxqrp2_sTWng"/>
+        <type xmi:id="_hw95cw8ZEeyxqrp2_sTWng" name="Menu">
+          <modelElement href="PetriNetwork_One.uml#_hIF7QA8ZEeyxqrp2_sTWng"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_hw95dA8ZEeyxqrp2_sTWng" comments="_hwwdwA8ZEeyxqrp2_sTWng" targetConnectionVisual="_hwwdwQ8ZEeyxqrp2_sTWng" name="startMenu">
+      <modelElement href="PetriNetwork_One.uml#_hIPsQA8ZEeyxqrp2_sTWng"/>
+      <visibility xmi:id="_hw95dQ8ZEeyxqrp2_sTWng" label="+"/>
+      <cardinality xmi:id="_hw95dg8ZEeyxqrp2_sTWng" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_hw95dw8ZEeyxqrp2_sTWng" comments="_hwxE0A8ZEeyxqrp2_sTWng" targetConnectionVisual="_hwxE0Q8ZEeyxqrp2_sTWng" name="createNetwork">
+      <modelElement href="PetriNetwork_One.uml#_hIQTUA8ZEeyxqrp2_sTWng"/>
+      <visibility xmi:id="_hw95eA8ZEeyxqrp2_sTWng" label="+"/>
+      <cardinality xmi:id="_hw95eQ8ZEeyxqrp2_sTWng" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_hw95eg8ZEeyxqrp2_sTWng" comments="_hwxE0g8ZEeyxqrp2_sTWng" targetConnectionVisual="_hwxE0w8ZEeyxqrp2_sTWng" name="saveOption">
+      <modelElement href="PetriNetwork_One.uml#_hIQ6YA8ZEeyxqrp2_sTWng"/>
+      <visualProperties xmi:id="_tqsqwA8aEeyxqrp2_sTWng"/>
+      <visibility xmi:id="_hw95ew8ZEeyxqrp2_sTWng" label="-"/>
+      <cardinality xmi:id="_hw95fA8ZEeyxqrp2_sTWng" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_hw95fQ8ZEeyxqrp2_sTWng" comments="_hwxr4A8ZEeyxqrp2_sTWng" targetConnectionVisual="_hwxr4Q8ZEeyxqrp2_sTWng" name="netViewer">
+      <modelElement href="PetriNetwork_One.uml#_hISIgA8ZEeyxqrp2_sTWng"/>
+      <visualProperties xmi:id="_tqsqwQ8aEeyxqrp2_sTWng"/>
+      <visibility xmi:id="_hw95fg8ZEeyxqrp2_sTWng" label="-"/>
+      <cardinality xmi:id="_hw95fw8ZEeyxqrp2_sTWng" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_hw95gA8ZEeyxqrp2_sTWng" comments="_hwxr4g8ZEeyxqrp2_sTWng" targetConnectionVisual="_hwxr4w8ZEeyxqrp2_sTWng" name="createBase">
+      <modelElement href="PetriNetwork_One.uml#_hISvkA8ZEeyxqrp2_sTWng"/>
+      <visualProperties xmi:id="_tqsqwg8aEeyxqrp2_sTWng"/>
+      <visibility xmi:id="_hw95gQ8ZEeyxqrp2_sTWng" label="-"/>
+      <cardinality xmi:id="_hw95gg8ZEeyxqrp2_sTWng" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_hw95gw8ZEeyxqrp2_sTWng" comments="_hwyS8A8ZEeyxqrp2_sTWng" targetConnectionVisual="_hwyS8Q8ZEeyxqrp2_sTWng" name="createLocation">
+      <modelElement href="PetriNetwork_One.uml#_hITWoA8ZEeyxqrp2_sTWng"/>
+      <visualProperties xmi:id="_tqtR0A8aEeyxqrp2_sTWng"/>
+      <visibility xmi:id="_hw95hA8ZEeyxqrp2_sTWng" label="-"/>
+      <cardinality xmi:id="_hw95hQ8ZEeyxqrp2_sTWng" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_hw95hg8ZEeyxqrp2_sTWng" comments="_hwyS8g8ZEeyxqrp2_sTWng" targetConnectionVisual="_hwyS8w8ZEeyxqrp2_sTWng" name="createTransition">
+      <modelElement href="PetriNetwork_One.uml#_hIT9sA8ZEeyxqrp2_sTWng"/>
+      <visualProperties xmi:id="_tqtR0Q8aEeyxqrp2_sTWng"/>
+      <visibility xmi:id="_hw95hw8ZEeyxqrp2_sTWng" label="-"/>
+      <cardinality xmi:id="_hw95iA8ZEeyxqrp2_sTWng" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_hw95iQ8ZEeyxqrp2_sTWng" comments="_hwy6AA8ZEeyxqrp2_sTWng" targetConnectionVisual="_hwy6AQ8ZEeyxqrp2_sTWng" name="checkNetExistence">
+      <modelElement href="PetriNetwork_One.uml#_hIYPIA8ZEeyxqrp2_sTWng"/>
+      <visualProperties xmi:id="_tqtR0g8aEeyxqrp2_sTWng"/>
+      <visibility xmi:id="_hw95ig8ZEeyxqrp2_sTWng" label="-"/>
+      <cardinality xmi:id="_hw95iw8ZEeyxqrp2_sTWng" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_hw95jA8ZEeyxqrp2_sTWng">
+        <modelElement href="PetriNetwork_One.uml#_hIYPIg8ZEeyxqrp2_sTWng"/>
+        <type xmi:id="_hw95jQ8ZEeyxqrp2_sTWng" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_hw95jg8ZEeyxqrp2_sTWng" name="name">
+        <modelElement href="PetriNetwork_One.uml#_hIYPIQ8ZEeyxqrp2_sTWng"/>
+        <cardinality xmi:id="_hw95jw8ZEeyxqrp2_sTWng" label="1" max="1" min="1"/>
+        <type xmi:id="_hw95kA8ZEeyxqrp2_sTWng" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_hw95kQ8ZEeyxqrp2_sTWng" comments="_hwzhEA8ZEeyxqrp2_sTWng" targetConnectionVisual="_hwzhEQ8ZEeyxqrp2_sTWng" name="getNetworksList">
+      <modelElement href="PetriNetwork_One.uml#_hIZdQA8ZEeyxqrp2_sTWng"/>
+      <visualProperties xmi:id="_tqtR0w8aEeyxqrp2_sTWng"/>
+      <visibility xmi:id="_hw95kg8ZEeyxqrp2_sTWng" label="-"/>
+      <cardinality xmi:id="_hw95kw8ZEeyxqrp2_sTWng" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_hw95lA8ZEeyxqrp2_sTWng">
+        <modelElement href="PetriNetwork_One.uml#_hS2ZwA8ZEeyxqrp2_sTWng"/>
+        <type xmi:id="_hw95lQ8ZEeyxqrp2_sTWng" name="StringBuffer">
+          <modelElement href="PetriNetwork_One.uml#_hS0kkQ8ZEeyxqrp2_sTWng"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_hw95lg8ZEeyxqrp2_sTWng" comments="_hw0IIA8ZEeyxqrp2_sTWng" targetConnectionVisual="_hw0IIQ8ZEeyxqrp2_sTWng" name="createLink">
+      <modelElement href="PetriNetwork_One.uml#_hRyp0A8ZEeyxqrp2_sTWng"/>
+      <visibility xmi:id="_hw95lw8ZEeyxqrp2_sTWng" label="+"/>
+      <cardinality xmi:id="_hw95mA8ZEeyxqrp2_sTWng" label="1" max="1" min="1"/>
+      <parameters xmi:id="_hw95mQ8ZEeyxqrp2_sTWng" name="t">
+        <modelElement href="PetriNetwork_One.uml#_hRzQ4A8ZEeyxqrp2_sTWng"/>
+        <cardinality xmi:id="_hw95mg8ZEeyxqrp2_sTWng" label="1" max="1" min="1"/>
+        <type xmi:id="_hw95mw8ZEeyxqrp2_sTWng" name="Transition">
+          <modelElement href="PetriNetwork_One.uml#_hHwkEA8ZEeyxqrp2_sTWng"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_hw95nA8ZEeyxqrp2_sTWng" name="l">
+        <modelElement href="PetriNetwork_One.uml#_hRzQ4Q8ZEeyxqrp2_sTWng"/>
+        <cardinality xmi:id="_hw95nQ8ZEeyxqrp2_sTWng" label="1" max="1" min="1"/>
+        <type xmi:id="_hw95ng8ZEeyxqrp2_sTWng" name="Location">
+          <modelElement href="PetriNetwork_One.uml#_hH8xUA8ZEeyxqrp2_sTWng"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_hw95nw8ZEeyxqrp2_sTWng" comments="_hw0vMA8ZEeyxqrp2_sTWng" targetConnectionVisual="_hw0vMQ8ZEeyxqrp2_sTWng" name="checkLinkExistence">
+      <modelElement href="PetriNetwork_One.uml#_hR0fAA8ZEeyxqrp2_sTWng"/>
+      <visualProperties xmi:id="_tqt44A8aEeyxqrp2_sTWng"/>
+      <visibility xmi:id="_hw95oA8ZEeyxqrp2_sTWng" label="-"/>
+      <cardinality xmi:id="_hw95oQ8ZEeyxqrp2_sTWng" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_hw95og8ZEeyxqrp2_sTWng">
+        <modelElement href="PetriNetwork_One.uml#_hR1tIA8ZEeyxqrp2_sTWng"/>
+        <type xmi:id="_hw95ow8ZEeyxqrp2_sTWng" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_hw95pA8ZEeyxqrp2_sTWng" name="origin">
+        <modelElement href="PetriNetwork_One.uml#_hR0fAQ8ZEeyxqrp2_sTWng"/>
+        <cardinality xmi:id="_hw95pQ8ZEeyxqrp2_sTWng" label="1" max="1" min="1"/>
+        <type xmi:id="_hw95pg8ZEeyxqrp2_sTWng" name="Node">
+          <modelElement href="PetriNetwork_One.uml#_hJTcMA8ZEeyxqrp2_sTWng"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_hw95pw8ZEeyxqrp2_sTWng" name="destination">
+        <modelElement href="PetriNetwork_One.uml#_hR1GEA8ZEeyxqrp2_sTWng"/>
+        <cardinality xmi:id="_hw95qA8ZEeyxqrp2_sTWng" label="1" max="1" min="1"/>
+        <type xmi:id="_hw95qQ8ZEeyxqrp2_sTWng" name="Node">
+          <modelElement href="PetriNetwork_One.uml#_hJTcMA8ZEeyxqrp2_sTWng"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_hw95qg8ZEeyxqrp2_sTWng" comments="_hw1WQA8ZEeyxqrp2_sTWng" targetConnectionVisual="_hw1WQQ8ZEeyxqrp2_sTWng" name="saveNetOnFile">
+      <modelElement href="PetriNetwork_One.uml#_hR27QA8ZEeyxqrp2_sTWng"/>
+      <visualProperties xmi:id="_tqt44Q8aEeyxqrp2_sTWng"/>
+      <visibility xmi:id="_hw95qw8ZEeyxqrp2_sTWng" label="-"/>
+      <cardinality xmi:id="_hw95rA8ZEeyxqrp2_sTWng" label="1" max="1" min="1"/>
+      <parameters xmi:id="_hw95rQ8ZEeyxqrp2_sTWng" name="n">
+        <modelElement href="PetriNetwork_One.uml#_hR27QQ8ZEeyxqrp2_sTWng"/>
+        <cardinality xmi:id="_hw95rg8ZEeyxqrp2_sTWng" label="1" max="1" min="1"/>
+        <type xmi:id="_hw95rw8ZEeyxqrp2_sTWng" name="Network">
+          <modelElement href="PetriNetwork_One.uml#_hItmUA8ZEeyxqrp2_sTWng"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:InterfaceVisual" xmi:id="_hxh50A8ZEeyxqrp2_sTWng" name="NameGiver" subclassedBy="_hxdoYA8ZEeyxqrp2_sTWng _hxdoYQ8ZEeyxqrp2_sTWng">
+    <modelElement href="PetriNetwork_One.uml#_hIp78A8ZEeyxqrp2_sTWng"/>
+    <visualProperties xmi:id="_hxh50Q8ZEeyxqrp2_sTWng" position="-183.0,-360.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_hxh50g8ZEeyxqrp2_sTWng" label="+"/>
+    <attributes xmi:id="_hxh50w8ZEeyxqrp2_sTWng" name="name">
+      <modelElement href="PetriNetwork_One.uml#_hIsYMA8ZEeyxqrp2_sTWng"/>
+      <visibility xmi:id="_hxh51A8ZEeyxqrp2_sTWng" label="+"/>
+      <cardinality xmi:id="_hxh51Q8ZEeyxqrp2_sTWng" label="1" max="1" min="1"/>
+      <type xmi:id="_hxh51g8ZEeyxqrp2_sTWng" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_hvt78A8ZEeyxqrp2_sTWng" name="FileNotFoundException">
+    <modelElement href="PetriNetwork_One.uml#_hRmckA8ZEeyxqrp2_sTWng"/>
+    <visualProperties xmi:id="_hvt78Q8ZEeyxqrp2_sTWng" position="317.0,774.0" size="-1.0,-1.0"/>
+    <stereotypes xmi:id="_hvt78g8ZEeyxqrp2_sTWng" name="Reference">
+      <modelElement href="PetriNetwork_One.uml#_hRo40A8ZEeyxqrp2_sTWng"/>
+    </stereotypes>
+    <visibility xmi:id="_hvt78w8ZEeyxqrp2_sTWng" label="+"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_hwRVkA8ZEeyxqrp2_sTWng" name="Transition" generalizations="_hwOSQA8ZEeyxqrp2_sTWng">
+    <modelElement href="PetriNetwork_One.uml#_hHwkEA8ZEeyxqrp2_sTWng"/>
+    <visualProperties xmi:id="_hwRVkQ8ZEeyxqrp2_sTWng" position="-214.0,495.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_hwRVkg8ZEeyxqrp2_sTWng" label="+"/>
+    <operations xmi:id="_hwRVkw8ZEeyxqrp2_sTWng" name="Transition">
+      <modelElement href="PetriNetwork_One.uml#_hH5G8A8ZEeyxqrp2_sTWng"/>
+      <keywords xmi:id="_hwRVlA8ZEeyxqrp2_sTWng" keyword="create"/>
+      <visibility xmi:id="_hwRVlQ8ZEeyxqrp2_sTWng" label="+"/>
+      <cardinality xmi:id="_hwRVlg8ZEeyxqrp2_sTWng" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_hwRVlw8ZEeyxqrp2_sTWng">
+        <modelElement href="PetriNetwork_One.uml#_hH7jMA8ZEeyxqrp2_sTWng"/>
+        <type xmi:id="_hwRVmA8ZEeyxqrp2_sTWng" name="Transition">
+          <modelElement href="PetriNetwork_One.uml#_hHwkEA8ZEeyxqrp2_sTWng"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_hwRVmQ8ZEeyxqrp2_sTWng" name="netId">
+        <modelElement href="PetriNetwork_One.uml#_hH5uAA8ZEeyxqrp2_sTWng"/>
+        <cardinality xmi:id="_hwRVmg8ZEeyxqrp2_sTWng" label="1" max="1" min="1"/>
+        <type xmi:id="_hwRVmw8ZEeyxqrp2_sTWng" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_hwRVnA8ZEeyxqrp2_sTWng" name="nodeId">
+        <modelElement href="PetriNetwork_One.uml#_hH5uAQ8ZEeyxqrp2_sTWng"/>
+        <cardinality xmi:id="_hwRVnQ8ZEeyxqrp2_sTWng" label="1" max="1" min="1"/>
+        <type xmi:id="_hwRVng8ZEeyxqrp2_sTWng" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_hwRVnw8ZEeyxqrp2_sTWng" name="nodeName">
+        <modelElement href="PetriNetwork_One.uml#_hH5uAg8ZEeyxqrp2_sTWng"/>
+        <cardinality xmi:id="_hwRVoA8ZEeyxqrp2_sTWng" label="1" max="1" min="1"/>
+        <type xmi:id="_hwRVoQ8ZEeyxqrp2_sTWng" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+</com.yattasolutions.uml.diagrams.classifier:ClassDiagram>
